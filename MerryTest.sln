@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32811.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MerryTest", "MerryTest\MerryTest.csproj", "{BEEE6355-8E55-4A46-B032-050DCA94B7E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HDT647", "..\HDT647 RTK Source 2023.10.16\MerryDllFramework\HDT647.csproj", "{BB73ACF2-8D95-423D-BC75-FC58FC55BB17}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BEEE6355-8E55-4A46-B032-050DCA94B7E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEEE6355-8E55-4A46-B032-050DCA94B7E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEEE6355-8E55-4A46-B032-050DCA94B7E9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BEEE6355-8E55-4A46-B032-050DCA94B7E9}.Debug|x86.Build.0 = Debug|Any CPU
+		{BEEE6355-8E55-4A46-B032-050DCA94B7E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEEE6355-8E55-4A46-B032-050DCA94B7E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEEE6355-8E55-4A46-B032-050DCA94B7E9}.Release|x86.ActiveCfg = Release|Any CPU
+		{BEEE6355-8E55-4A46-B032-050DCA94B7E9}.Release|x86.Build.0 = Release|Any CPU
+		{BB73ACF2-8D95-423D-BC75-FC58FC55BB17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB73ACF2-8D95-423D-BC75-FC58FC55BB17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB73ACF2-8D95-423D-BC75-FC58FC55BB17}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BB73ACF2-8D95-423D-BC75-FC58FC55BB17}.Debug|x86.Build.0 = Debug|Any CPU
+		{BB73ACF2-8D95-423D-BC75-FC58FC55BB17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB73ACF2-8D95-423D-BC75-FC58FC55BB17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB73ACF2-8D95-423D-BC75-FC58FC55BB17}.Release|x86.ActiveCfg = Release|Any CPU
+		{BB73ACF2-8D95-423D-BC75-FC58FC55BB17}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C562C218-9AB3-458A-8C56-128A534B21D4}
+	EndGlobalSection
+EndGlobal

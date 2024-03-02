@@ -1,0 +1,2 @@
+1,DyCurrent,N/A,N/A,N/A,6,dllname=_8342_V1&method=A_DC_CT&NewRange=0.5&Count=5
+0,+-1s,N/A,N/A,N/A,6,dllname=Common&延时=sleep&时间=1000

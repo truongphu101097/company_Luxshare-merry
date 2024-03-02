@@ -1,0 +1,62 @@
+[16:02:30:399]\\?\hid#dell09c2&col02#5&bc4dc33&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[16:02:30:399]\\?\hid#vid_046d&pid_0acb&mi_03&col01#7&2c0518a&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[16:02:30:399]\\?\hid#dell09c2&col03#5&bc4dc33&0&0002#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[16:02:30:399]\\?\hid#intc816&col01#3&207f9b7f&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[16:02:30:399]\\?\hid#intc816&col02#3&207f9b7f&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[16:02:30:399]\\?\hid#vid_046d&pid_0acb&mi_03&col02#7&2c0518a&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[16:02:30:399]\\?\hid#converteddevice&col02#5&17bac0a6&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[16:02:30:399]\\?\hid#converteddevice&col03#5&17bac0a6&0&0002#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[16:02:30:400]\\?\hid#dell09c2&col04#5&bc4dc33&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[16:02:30:400]\\?\hid#{00001812-0000-1000-8000-00805f9b34fb}_dev_vid&0232c2_pid&0001_rev&0068_ccb624cd66b1#9&326e3aae&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[16:02:30:400]\\?\hid#vid_046d&pid_0acb&mi_03&col03#7&2c0518a&0&0002#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[16:02:30:400]\\?\hid#dell09c2&col05#5&bc4dc33&0&0004#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[16:02:30:400]\\?\hid#vid_046d&pid_0acb&mi_03&col04#7&2c0518a&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[16:02:30:400]\\?\hid#converteddevice&col01#5&17bac0a6&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}\kbd
+[16:02:30:400]\\?\hid#dell09c2&col01#5&bc4dc33&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[16:02:30:404]try_path=\\?\hid#vid_046d&pid_0acb&mi_03&col01#7&2c0518a&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[16:02:30:404]CreateFile_ing=\\?\hid#vid_046d&pid_0acb&mi_03&col01#7&2c0518a&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[16:02:30:415][invalid device][System.Exception]
+[16:02:30:419]   at ..(String  )
+[16:02:30:419]close_hid_handle
+[16:02:30:422][connect HID device fail : invalid device][System.Exception]
+[16:02:30:422]   at ..(String  )
+   at ..(String  )
+   at ..connect(UInt16 vid, UInt16 pid,  vt)
+[16:02:30:422]try_path=\\?\hid#vid_046d&pid_0acb&mi_03&col02#7&2c0518a&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[16:02:30:422]CreateFile_ing=\\?\hid#vid_046d&pid_0acb&mi_03&col02#7&2c0518a&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[16:02:30:422]CreateFile_ok=1084
+[16:02:30:422]HidD_GetPreparsedData_ok=True
+[16:02:30:422]HidP_GetCaps_ok=1114112
+[16:02:30:423]	InputReportByteLength=5
+[16:02:30:423]	OutputReportByteLength=0
+[16:02:30:425][OutputReportLength_not_515][System.Exception]
+[16:02:30:425]   at ..(String  )
+[16:02:30:425]close_hid_handle
+[16:02:30:427][connect HID device fail : OutputReportLength_not_515][System.Exception]
+[16:02:30:427]   at ..(String  )
+   at ..(String  )
+   at ..connect(UInt16 vid, UInt16 pid,  vt)
+[16:02:30:427]try_path=\\?\hid#vid_046d&pid_0acb&mi_03&col03#7&2c0518a&0&0002#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[16:02:30:427]CreateFile_ing=\\?\hid#vid_046d&pid_0acb&mi_03&col03#7&2c0518a&0&0002#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[16:02:30:429][invalid device][System.Exception]
+[16:02:30:429]   at ..(String  )
+[16:02:30:429]close_hid_handle
+[16:02:30:430][connect HID device fail : invalid device][System.Exception]
+[16:02:30:430]   at ..(String  )
+   at ..(String  )
+   at ..connect(UInt16 vid, UInt16 pid,  vt)
+[16:02:30:430]try_path=\\?\hid#vid_046d&pid_0acb&mi_03&col04#7&2c0518a&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[16:02:30:430]CreateFile_ing=\\?\hid#vid_046d&pid_0acb&mi_03&col04#7&2c0518a&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[16:02:30:431]CreateFile_ok=1096
+[16:02:30:431]HidD_GetPreparsedData_ok=True
+[16:02:30:431]HidP_GetCaps_ok=1114112
+[16:02:30:431]	InputReportByteLength=21
+[16:02:30:431]	OutputReportByteLength=3
+[16:02:30:432][OutputReportLength_not_515][System.Exception]
+[16:02:30:433]   at ..(String  )
+[16:02:30:433]close_hid_handle
+[16:02:30:434][connect HID device fail : OutputReportLength_not_515][System.Exception]
+[16:02:30:434]   at ..(String  )
+   at ..(String  )
+   at ..connect(UInt16 vid, UInt16 pid,  vt)
+[16:02:31:954]close_hid_handle

@@ -1,0 +1,60 @@
+[09:42:17:633]\\?\hid#dell0a23&col03#5&184b7e16&0&0002#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[09:42:17:633]\\?\hid#dell0a23&col04#5&184b7e16&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[09:42:17:634]\\?\hid#vid_ffff&pid_bace&rev_0002&mi_00&col03#3&258c3fbc&0&0002#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[09:42:17:634]\\?\hid#vid_ffff&pid_bace&rev_0002&mi_00&col04#3&258c3fbc&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[09:42:17:634]\\?\hid#intc816#3&d2322f2&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[09:42:17:634]\\?\hid#vid_ffff&pid_bace&rev_0002&mi_00&col05#3&258c3fbc&0&0004#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[09:42:17:634]\\?\hid#vid_ffff&pid_bace&rev_0002&mi_00&col01#3&258c3fbc&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}\kbd
+[09:42:17:635]\\?\hid#converteddevice&col02#5&32cf90e6&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[09:42:17:635]\\?\hid#converteddevice&col03#5&32cf90e6&0&0002#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[09:42:17:635]\\?\hid#vid_ffff&pid_bace&rev_0002&mi_00&col02#3&258c3fbc&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}\kbd
+[09:42:17:635]\\?\hid#converteddevice&col01#5&32cf90e6&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}\kbd
+[09:42:17:635]\\?\hid#dell0a23&col01#5&184b7e16&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[09:42:17:635]\\?\hid#dell0a23&col02#5&184b7e16&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[09:42:17:635]\\?\hid#vid_046d&pid_c077#6&21f6894a&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[09:42:17:635]\\?\hid#vid_046d&pid_0acb&mi_03&col01#7&64d5b1&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[09:42:17:635]\\?\hid#vid_046d&pid_0acb&mi_03&col02#7&64d5b1&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[09:42:17:635]\\?\hid#vid_046d&pid_0acb&mi_03&col03#7&64d5b1&0&0002#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[09:42:17:635]\\?\hid#vid_046d&pid_0acb&mi_03&col04#7&64d5b1&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[09:42:17:639]id=VID=FFFF,PID=BACE
+[09:42:17:640]	getCaps=null
+[09:42:17:640]CloseHandleX
+[09:42:17:640]id=VID=FFFF,PID=BACE
+[09:42:17:640]	getCaps=null
+[09:42:17:640]CloseHandleX
+[09:42:17:641]id=VID=FFFF,PID=BACE
+[09:42:17:641]	getCaps=null
+[09:42:17:641]CloseHandleX
+[09:42:17:641]id=VID=FFFF,PID=BACE
+[09:42:17:641]	getCaps=null
+[09:42:17:641]CloseHandleX
+[09:42:17:641]id=VID=FFFF,PID=BACE
+[09:42:17:641]	getCaps=null
+[09:42:17:641]CloseHandleX
+[09:42:17:641]id=VID=046D,PID=C077
+[09:42:17:641]	getCaps=null
+[09:42:17:641]CloseHandleX
+[09:42:17:641]id=VID=046D,PID=0ACB
+[09:42:17:641]	getCaps=null
+[09:42:17:641]CloseHandleX
+[09:42:17:641]id=VID=046D,PID=0ACB
+[09:42:17:641]	caps.InputReportByteLength=5
+[09:42:17:641]	caps.OutputReportByteLength=0
+[09:42:17:641]	attributes.VendorID=0x46D
+[09:42:17:641]	attributes.ProductID=0xACB
+[09:42:17:642]	SerialNumberString=202105190004
+[09:42:17:643]	ManufacturerString=Logitech G series
+[09:42:17:644]	ProductString=G435 SE Wireless Gaming Headset
+[09:42:17:645]CloseHandleX
+[09:42:17:645]id=VID=046D,PID=0ACB
+[09:42:17:645]	getCaps=null
+[09:42:17:645]CloseHandleX
+[09:42:17:645]id=VID=046D,PID=0ACB
+[09:42:17:645]	caps.InputReportByteLength=21
+[09:42:17:645]	caps.OutputReportByteLength=3
+[09:42:17:645]	attributes.VendorID=0x46D
+[09:42:17:645]	attributes.ProductID=0xACB
+[09:42:17:646]	SerialNumberString=202105190004
+[09:42:17:647]	ManufacturerString=Logitech G series
+[09:42:17:648]	ProductString=G435 SE Wireless Gaming Headset
+[09:42:17:648]CloseHandleX

@@ -1,0 +1,21 @@
+2024-01-18 16:46:51-checkEmpNo==>>Execute Start
+2024-01-18 16:46:51-checkEmpNo==>>Param【EMP】【91201975】
+2024-01-18 16:46:51-checkEmpNo==>>Param【STATION】【T2.3】
+2024-01-18 16:46:51-checkEmpNo==>>Result【OK;】 - Exectue Total【131】ms 
+2024-01-18 16:46:51-GetPart==>>Execute Start
+2024-01-18 16:46:51-GetPart==>>Param【WO】【000000000000】
+2024-01-18 16:46:51-GetPart==>>Result【NG:工单错误未找到料号】 - Exectue Total【3】ms 
+2024-01-18 16:47:23-checkEmpNo==>>Execute Start
+2024-01-18 16:47:23-checkEmpNo==>>Param【EMP】【91201975】
+2024-01-18 16:47:23-checkEmpNo==>>Param【STATION】【T2.3】
+2024-01-18 16:47:23-checkEmpNo==>>Result【OK;】 - Exectue Total【38】ms 
+2024-01-18 16:47:23-GetPart==>>Execute Start
+2024-01-18 16:47:23-GetPart==>>Param【WO】【000000000000】
+2024-01-18 16:47:23-GetPart==>>Result【NG:工单错误未找到料号】 - Exectue Total【9】ms 
+2024-01-18 16:47:45-checkEmpNo==>>Execute Start
+2024-01-18 16:47:45-checkEmpNo==>>Param【EMP】【91201975】
+2024-01-18 16:47:45-checkEmpNo==>>Param【STATION】【T2.3】
+2024-01-18 16:47:45-checkEmpNo==>>Result【OK;】 - Exectue Total【20】ms 
+2024-01-18 16:47:45-GetPart==>>Execute Start
+2024-01-18 16:47:45-GetPart==>>Param【WO】【000000000000】
+2024-01-18 16:47:45-GetPart==>>Result【NG:工单错误未找到料号】 - Exectue Total【10】ms 

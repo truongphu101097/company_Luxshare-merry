@@ -1,0 +1,19 @@
+//窗体启动事件
+//使用说明行头“//”表示注释此行  ！！指定命名空间：MerryDllFramework  ，指定类：MerryDll
+//文件名称&方法名称 （无参可不输入，多参数用&分割）
+//登录MES
+MES&CheckUser
+//获取或更新Config
+Config_ini&GetConfig
+//更新平台程序
+Config_ini&CheckMerryTest
+//获取站别信息
+Config_ini&GetTestItem
+//检查机型的版本信息
+Config_ini&CheckTypeNameVersion
+//检查所有测试辅助模块的版本信息
+Config_ini&CheckAllDllVersion
+//检查网路连接
+NetworkCheck&Network
+//通讯电脑管理系统
+Config_ini&ConnectingToAService&http://10.175.5.59:8088/Computer_status/Computer_test_upload

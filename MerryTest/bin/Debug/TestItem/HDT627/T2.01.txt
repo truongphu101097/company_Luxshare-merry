@@ -1,0 +1,17 @@
+1,UID,N/A,N/A,N/A,6,dllname=MES&Method=LogiUIDForIndex&Type=False&BindSNIndex=0
+2,getFwByDongle,N/A,V2.0.6,V2.0.6,1,getFwByDongle
+3,+OpenDongleUSB,N/A,N/A,N/A,1,OpenDongleUSB
+4,GetPCBASNByDongle,N/A,N/A,N/A,3,GetPCBASNByDongle
+5,SetSNByDongle,N/A,N/A,N/A,3,SetSNByDongle
+6,GetSNByDongle,N/A,N/A,N/A,3,GetSNByDongle
+7,+CloseDongleUSB,N/A,N/A,N/A,1,CloseDongleUSB
+8,Dongle_DUTMODE,N/A,N/A,N/A,3,EnterDongleDutModel
+0,-2S,N/A,N/A,N/A,6,dllname=Common&method=Sleep&时间=2000
+9,Connect,N/A,N/A,N/A,6,dllname=RT550&method=Connect
+10,StartTest,N/A,N/A,N/A,6,dllname=RT550&method=StartTest&TimeOut=50
+11,2402TxPowerCH1Dongle,dBm,-6,2,5,dllname=RT550&method=output_power_low
+12,2440TxPowerCH20Dongle,dBm,-6,2,5,dllname=RT550&method=output_power_mid
+13,2440FreqOfsetCH20Ant1,KHz,-20,20,5,dllname=RT550&method=carrier_drift_mid
+14,2476TxPowerCH38Dongle,dBm,-6,2,5,dllname=RT550&method=output_power_high
+15,ReadANT1BER,%,0,0.1,5,dllname=RT550&method=s_slot_sensitivitv
+16,DongleModulationIndex,N/A,0.8,1.1,5,dllname=RT550&method=DfDiff

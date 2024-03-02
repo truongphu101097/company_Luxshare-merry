@@ -1,0 +1,7 @@
+0,-OpenSoundCheck,N/A,N/A,N/A,6,dllname=SoundCheck&method=OpenSoundCheck
+1,UID,N/A,N/A,N/A,6,dllname=MES&Method=LogiUIDForIndex&Type=False&BindSNIndex=0
+2,SetMicNROffByHID,N/A,N/A,N/A,3,SetMicNROffByHID
+0,-2S,N/A,N/A,N/A,6,dllname=Common&method=Sleep&时间=2000
+3,RunSoundcheck,N/A,N/A,N/A,4,dllname=SoundCheck&使用方式=Start&窗体名称=&按键名称=
+4,GetSoundcheckResults,N/A,N/A,N/A,4,dllname=SoundCheck&读取SC结果=GetreSult&弹窗名字=&检测到弹窗后输入的按键=
+5,GetVoltageByDongle|2,N/A,3.75,4.0,2,GetVoltageByDongle

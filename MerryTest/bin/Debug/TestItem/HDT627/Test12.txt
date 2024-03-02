@@ -1,0 +1,2 @@
+﻿1,ScanBinCode,N/A,N/A,N/A,6,dllname=MES&GetBD=BarCodeWindow&条码长度=10
+2,compareBarCode,N/A,N/A,N/A,1,compareBarCode

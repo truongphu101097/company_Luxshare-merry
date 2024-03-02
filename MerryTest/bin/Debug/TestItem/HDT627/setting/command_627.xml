@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CommandBook>
+	<RACE_HEADSET_POWER_OFF_BY_DONGLE>
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x1111" />
+			<Enable type="uint8" value="0x01" />
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5B" />
+			<packet_len type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x1111" />
+			<payload type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</RACE_HEADSET_POWER_OFF_BY_DONGLE>
+	<Enable_Button>
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x000B" />
+			<Enable type="uint8" value="0x01" />
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5B" />
+			<packet_len type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x000B" />
+			<res type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</Enable_Button>
+	
+	<Check_Button_MUTE timeout="1000">
+		<RequestFormat>
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5D" />
+			<packet_len type="uint16" value="0x0004" />
+			<race_id type="uint16" value="0x000B" />
+			<MuteButton type="uint8" value="0x7E" />
+			<res type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</Check_Button_MUTE>
+	
+	<Check_Button_VR timeout="1000">
+		<RequestFormat>
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5D" />
+			<packet_len type="uint16" value="0x0004" />
+			<race_id type="uint16" value="0x000B" />
+			<Encoder type="uint8" value="0x00" />
+			<res type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</Check_Button_VR>
+	
+	<RACE_SET_BIT_ADDRESS>
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="0x0008" />
+			<race_id type="uint16" value="0x0CC2" />
+			<KeyData type="uint8_array" array_length="*" />
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5B" />
+			<packet_len type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x0CC2" />
+			<payload type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</RACE_SET_BIT_ADDRESS>
+	<RACE_GET_CRYSTAL_TRIM>
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="0x0004" />
+			<race_id type="uint16" value="0x0A00" />
+			<NvKeyID type="uint16" value="0x2045"/>	
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5B" />
+			<packet_len type="uint16" value="0x0007" />
+			<race_id type="uint16" value="0x0A00" />
+			<KeyLength type="uint8" value="0x03" />
+			<Success type="uint8" value="0x00" />
+			<payload type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</RACE_GET_CRYSTAL_TRIM>
+	<RACE_SET_PCBA_SN>
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="0x0010" />
+			<race_id type="uint16" value="0x0A01" />
+			<NvKeyID type="uint16" value="0xF80B"/>	
+			<KeyData type="uint8_array" array_length="*" />
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5B" />
+			<packet_len type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x0A01" />
+			<payload type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</RACE_SET_PCBA_SN>
+	
+	<RACE_SET_SN>
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="0x0010" />
+			<race_id type="uint16" value="0x0A01" />
+			<NvKeyID type="uint16" value="0xF802"/>	
+			<KeyData type="uint8_array" array_length="*" />
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5B" />
+			<Length type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x0A01" />
+			<payload type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</RACE_SET_SN>
+	
+	<RACE_SN timeout="2000">
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="0x0006" />
+			<race_id type="uint16" value="0x0A00" />
+			<NvKeyID type="uint16" value="0xF802"/>		
+			<NvKeyLength type="uint16" value="0x000C"/>	
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5B" />
+			<Length type="uint16" value="0x0010" />
+			<race_id type="uint16" value="0x0A00" />
+			<KeyLength type="uint8" value="0x0C" />
+			<Success type="uint8" value="0x00" />
+			<payload type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</RACE_SN>
+	
+	<RACE_PCBA_SN timeout="2000">
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<Length type="uint16" value="0x0006" />
+			<race_id type="uint16" value="0x0A00" />
+			<NvKeyID type="uint16" value="0xF80B"/>	
+			<NvKeyLength type="uint16" value="0x000C"/>	
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5B" />
+			<Length type="uint16" value="0x0010" />
+			<race_id type="uint16" value="0x0A00" />
+			<KeyLength type="uint8" value="0x0C" />
+			<Success type="uint8" value="0x00" />
+			<payload type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</RACE_PCBA_SN>
+	
+	<RACE_PCBA_SN_bak>
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="__LEN_TO_END__" />
+			<race_id type="uint16" value="0x0A00" />
+			<NvKeyID type="uint16" value="0xF80B"/>			
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5B" />
+			<payload type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</RACE_PCBA_SN_bak>
+	
+	<RACE_SET_PASS_FLAG>
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="0x0006" />
+			<race_id type="uint16" value="0x0A01" />
+			<NvKeyID type="uint16" value="0xF803"/>	
+			<KeyData type="uint8_array" array_length="*" />			
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5B" />
+			<packet_len type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x0A01" />
+			<payload type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</RACE_SET_PASS_FLAG>
+	
+	<RACE_GET_PASS_FLAG>
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="__LEN_TO_END__" />
+			<race_id type="uint16" value="0x0A00" />
+			<NvKeyID type="uint16" value="0xF803"/>			
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5B" />
+			<packet_len type="uint16" value="0x0006" />
+			<race_id type="uint16" value="0x0A00" />
+			<KeyLength type="uint8" value="0x02" />
+			<Success type="uint8" value="0x00"/>
+			<payload type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</RACE_GET_PASS_FLAG>
+	<RACE_GET_PASS_FLAG_TEST_LENGTH> 
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="__LEN_TO_END__" />
+			<race_id type="uint16" value="0x0A00" />
+			<NvKeyID type="uint16" value="0xF803"/>			
+		</RequestFormat>
+		<ResponseFormat>
+			<payload type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</RACE_GET_PASS_FLAG_TEST_LENGTH>
+	<RACE_BIT_ADDRESS>
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x0CD5" />
+			<Agent type="uint8" value="0x00"/>			
+		</RequestFormat>
+		<ResponseFormat>
+		<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5B" />
+			<packet_len type="uint16" value="0x000A" />
+			<race_id type="uint16" value="0x0CD5" />
+			<Success type="uint8" value="0x00"/>
+			<Agent type="uint8" value="0x00" />
+			<payload type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</RACE_BIT_ADDRESS>
+	<RACE_APP_KEYCODE_FACTORY_RESET>
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="0x0004" />
+			<race_id type="uint16" value="0x1101" />
+			<payload_length type="uint16" value="0x0095"/>			
+		</RequestFormat>
+		<ResponseFormat>
+		</ResponseFormat>
+	</RACE_APP_KEYCODE_FACTORY_RESET>
+	
+	<RACE_DISABLESAVELOG timeout="2000">
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="0x0002" />
+			<race_id type="uint16" value="0x0F18" />		
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5D" />
+			<packet_len type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x0F18" />
+			<payload type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</RACE_DISABLESAVELOG>
+	
+	<RACE_DISABLEDSPLOG timeout="2000">
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="0x0004" />
+			<race_id type="uint16" value="0x0F20" />
+			<Disable type="uint16" value="0x0901"/>			
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5D" />
+			<packet_len type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x0F20" />
+			<payload type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</RACE_DISABLEDSPLOG>
+	
+	<RACE_DISABLECM4LOG timeout="2000">
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="0x0004" />
+			<race_id type="uint16" value="0x0F20" />
+			<Disable type="uint16" value="0x0900"/>			
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5D" />
+			<packet_len type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x0F20" />
+			<payload type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</RACE_DISABLECM4LOG>
+	
+	<RACE_UNLOCK>
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="0x0143" />
+			<race_id type="uint16" value="0x01FE" />
+			<Disable type="uint8" value="0x01"/>	
+			<KeyData type="uint8_array" array_length="*" />			
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5B" />
+			<packet_len type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x01FE" />
+			<payload type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</RACE_UNLOCK>
+	<RACE_LOCK timeout="2000">
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x01FE" />
+			<Enable type="uint8" value="0x00" />
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5B" />
+			<packet_len type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x01FE" />
+			<payload type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</RACE_LOCK>
+	
+	<RACE_LED_OFF_CURRENT>
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="0x0004" />
+			<race_id type="uint16" value="0x1101" />
+			<ptype type="uint8" value="0x16" />
+			<Sucess type="uint8" value="0x00" />
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5B" />
+			<packet_len type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x1101" />
+			<payload type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</RACE_LED_OFF_CURRENT>
+	
+	<RACE_LOCK_STATUS timeout="2000">
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="0x0002" />
+			<race_id type="uint16" value="0x01FD" />
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5B" />
+			<packet_len type="uint16" value="0x0004" />
+			<race_id type="uint16" value="0x01FD" />
+			<Success type="uint8" value="0x00"/>	
+			<payload type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</RACE_LOCK_STATUS>
+	
+	<RACE_CM4_STATUS timeout="2000">
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x0F19" />
+			<CM4 type="uint8" value="0x00"/>
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5D" />
+			<packet_len type="uint16" value="0x0005" />
+			<race_id type="uint16" value="0x0F19" />
+			<Success type="uint8" value="0x00"/>
+			<CM4 type="uint8" value="0x00"/>
+			<payload type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</RACE_CM4_STATUS>
+	
+	<RACE_DSP_STATUS timeout="2000">
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x0F19" />
+			<DSP type="uint8" value="0x01"/>
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5D" />
+			<packet_len type="uint16" value="0x0005" />
+			<race_id type="uint16" value="0x0F19" />
+			<Success type="uint8" value="0x00"/>
+			<DSP type="uint8" value="0x01"/>
+			<payload type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</RACE_DSP_STATUS>
+	
+	<RACE_GET_MUTE>
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="0x0002" />
+			<race_id type="uint16" value="0x0005" />
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5B" />
+			<packet_len type="uint16" value="0x0005" />
+			<race_id type="uint16" value="0x0005" />
+			<payload type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</RACE_GET_MUTE>
+	<RACE_SET_MIC_NR_OFF>
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x0E0D" />
+			<Enable type="uint8" value="0x00" />
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5B" />
+			<packet_len type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x0E0D" />
+			<payload type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</RACE_SET_MIC_NR_OFF>
+	<RACE_SET_MIC_NR_ON>
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x0E0D" />
+			<Enable type="uint8" value="0x01" />
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5B" />
+			<packet_len type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x0E0D" />
+			<payload type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</RACE_SET_MIC_NR_ON>
+	
+	<RACE_DISABLE_BUTTON_MODEL>
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x000B" />
+			<Disable type="uint8" value="0x00" />
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5B" />
+			<packet_len type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x000B" />
+			<Disable type="uint8" value="0x00" />  
+		</ResponseFormat>
+	</RACE_DISABLE_BUTTON_MODEL>
+	
+	<RACE_ENTER_BUTTON_MODEL>
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x000B" />
+			<Enable type="uint8" value="0x01" />
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5B" />
+			<packet_len type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x000B" />
+			<Enable type="uint8" value="0x01" />  
+		</ResponseFormat>
+	</RACE_ENTER_BUTTON_MODEL>
+	
+	<RACE_SET_MUTE_OFF>
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x0006" />
+			<mute type="uint8" value="0x00" />
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5B" />
+			<packet_len type="uint16" value="0x0004" />
+			<race_id type="uint16" value="0x0006" />
+			<mute type="uint8" value="0x00" />
+			<payload type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</RACE_SET_MUTE_OFF>
+	<RACE_SET_MUTE_ON>
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x0006" />
+			<mute type="uint8" value="0x01" />
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5B" />
+			<packet_len type="uint16" value="0x0004" />
+			<race_id type="uint16" value="0x0006" />
+			<mute type="uint8" value="0x00" />
+			<payload type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</RACE_SET_MUTE_ON>
+	
+	<RACE_SET_COLOR_LOL>
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="0x0005" />
+			<race_id type="uint16" value="0x0A01" />
+			<NvKeyID type="uint16" value="0xF804" />
+			<ModelID type="uint8" value="0x04" />
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5B" />
+			<packet_len type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x0A01" />
+			<payload type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</RACE_SET_COLOR_LOL>
+	<RACE_SET_COLOR_BLUE>
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="0x0005" />
+			<race_id type="uint16" value="0x0A01" />
+			<NvKeyID type="uint16" value="0xF804" />
+			<ModelID type="uint8" value="0x03" />
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5B" />
+			<packet_len type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x0A01" />
+			<payload type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</RACE_SET_COLOR_BLUE>
+	<RACE_SET_COLOR_LILAC>
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="0x0005" />
+			<race_id type="uint16" value="0x0A01" />
+			<NvKeyID type="uint16" value="0xF804" />
+			<ModelID type="uint8" value="0x02" />
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5B" />
+			<packet_len type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x0A01" />
+			<payload type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</RACE_SET_COLOR_LILAC>
+	<RACE_SET_COLOR_WHITE>
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="0x0005" />
+			<race_id type="uint16" value="0x0A01" />
+			<NvKeyID type="uint16" value="0xF804" />
+			<ModelID type="uint8" value="0x01" />
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5B" />
+			<packet_len type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x0A01" />
+			<payload type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</RACE_SET_COLOR_WHITE>
+	<RACE_SET_COLOR_BLACK>
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="0x0005" />
+			<race_id type="uint16" value="0x0A01" />
+			<NvKeyID type="uint16" value="0xF804" />
+			<ModelID type="uint8" value="0x00" />
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5B" />
+			<packet_len type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x0A01" />
+			<payload type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</RACE_SET_COLOR_BLACK>
+	<RACE_GET_COLOR_ID >
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="0x0006" />
+			<race_id type="uint16" value="0x0A00" />
+			<NvKeyID type="uint16" value="0xF804" />
+		    <KeyLength type="uint8" value="0x01" />
+			<Sucess type="uint8" value="0x00" />
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5B" />
+			<packet_len type="uint16" value="0x0005" />
+			<race_id type="uint16" value="0x0A00" />
+			<KeyLength type="uint8" value="0x01" />
+			<Sucess type="uint8" value="0x00" />
+			<payload type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</RACE_GET_COLOR_ID>
+	
+	<RACE_HEADSET_POWER_OFF_AFTER_LOCK>
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<Length type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x1111" />
+			<PowerOff type="uint8" value="0x01" />
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5B" />
+			<Length type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x1111" />
+			<payload type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</RACE_HEADSET_POWER_OFF_AFTER_LOCK>
+	
+	<RACE_HEADSET_POWER_OFF>
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="0x0004" />
+			<race_id type="uint16" value="0x1101" />
+			<PowerOn type="uint16" value="0x0018" />
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5B" />
+			<packet_len type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x1101" />
+			<payload type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</RACE_HEADSET_POWER_OFF>
+	<RACE_HEADSET_POWER_ON>
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="0x0004" />
+			<race_id type="uint16" value="0x1101" />
+			<PowerOn type="uint16" value="0x0017" />
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5B" />
+			<packet_len type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x1101" />
+			<payload type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</RACE_HEADSET_POWER_ON>
+	<RACE_HEADSET_DUT_MODEL>
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="0x0004" />
+			<race_id type="uint16" value="0x1101" />
+			<DUT type="uint16" value="0x0300" />
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5B" />
+			<packet_len type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x1101" />
+			<payload type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</RACE_HEADSET_DUT_MODEL>
+	<RACE_READ_LED_BIN_CODE>
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<Length type="uint16" value="0x0004" />
+			<RACEID type="uint16" value="0x0A00" />
+			<NvKeyID type="uint16" value="0xF801" />
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5B" />
+			<Length type="uint16" value="0x000C" />
+			<RACEID type="uint16" value="0x0A00" />
+			<KeyLength type="uint8" value="0x08" />
+			<Sucess type="uint8" value="0x00" />
+			<payload type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</RACE_READ_LED_BIN_CODE>
+	
+	<RACE_WRITE_LED_BIN_CODE >
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5A" />
+			<packet_len type="uint16" value="0x000C" />
+			<race_id type="uint16" value="0x0A01" />
+			<NvKeyID type="uint16" value="0xF801" />
+			<KeyData type="uint8_array" array_length="*" />
+		</RequestFormat>
+		<ResponseFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5B" />
+			<packet_len type="uint16" value="0x0003" />
+			<race_id type="uint16" value="0x0A01" />			
+			<payload type="uint8_array" array_length="*" />
+		</ResponseFormat>
+	</RACE_WRITE_LED_BIN_CODE>
+	
+  <RACE_GET_BDADDRESS timeout="2000">
+    <RequestFormat>
+      <packet_type type="uint8" value="0x05" />
+      <race_type type="uint8" value="0x5A" />
+      <packet_len type="uint16" value="0x0003" />
+      <race_id type="uint16" value="0x0CD5" />
+      <agent_or_partner type="uint8" />
+    </RequestFormat>
+    <ResponseFormat>
+      <packet_type type="uint8" value="0x05" />
+      <race_type type="uint8" value="0x5B" />
+      <packet_len type="uint16" />
+      <race_id type="uint16" value="0x0CD5" />
+      <status type="uint8" />
+      <agent_or_partner type="uint8" />
+      <bd_address type="uint8_array" array_length="*" />
+    </ResponseFormat>
+  </RACE_GET_BDADDRESS>
+  
+  <RACE_GET_BDADDRESS1 timeout="2000">
+    <RequestFormat>
+      <packet_type type="uint8" value="0x05" />
+      <race_type type="uint8" value="0x5A" />
+      <packet_len type="uint16" value="__LEN_TO_END__" />
+      <race_id type="uint16" value="0x0CD5" />
+      <agent_or_partner type="uint8" />
+    </RequestFormat>
+    <ResponseFormat>
+      <packet_type type="uint8" value="0x05" />
+      <race_type type="uint8" value="0x5B" />
+      <packet_len type="uint16" />
+      <race_id type="uint16" value="0x0CD5" />
+      <status type="uint8" />
+      <agent_or_partner type="uint8" />
+      <bd_address type="uint8_array" array_length="*" />
+    </ResponseFormat>
+  </RACE_GET_BDADDRESS1>
+	
+	  
+  <test timeout="2000">
+    <RequestFormat>
+      <packet_type type="uint8" value="0x05" />
+      <race_type type="uint8" value="0x5A" />
+      <packet_len type="uint16" value="__LEN_TO_END__" />
+      <race_id type="uint16" value="0x0CD5" />
+      <agent_or_partner type="uint8" />
+    </RequestFormat>
+    <ResponseFormat>
+      <packet_type type="uint8" value="0x05" />
+      <race_type type="uint8" value="0x5B" />
+      <packet_len type="uint16" />
+      <race_id type="uint16" value="0x0CD5" />
+      <status type="uint8" />
+      <agent_or_partner type="uint8" />
+      <bd_address type="uint8_array" array_length="*" />
+    </ResponseFormat>
+  </test>
+	
+	<RACE_APP_KEYCODE_FACTORY_RESET>
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5C" />
+			<packet_len type="uint16" value="0x0004" />
+			<race_id type="uint16" value="0x1101" />
+			<payload_length type="uint16" value="0x0096"/>
+		</RequestFormat>
+		<ResponseFormat>
+		</ResponseFormat>
+	</RACE_APP_KEYCODE_FACTORY_RESET>
+	<RACE_APP_KEYCODE_SYSTEM_RESET>
+		<RequestFormat>
+			<packet_type type="uint8" value="0x05" />
+			<race_type type="uint8" value="0x5C" />
+			<packet_len type="uint16" value="0x0002" />
+			<race_id type="uint16" value="0x1F01" />
+		</RequestFormat>
+		<ResponseFormat>
+		</ResponseFormat>
+	</RACE_APP_KEYCODE_SYSTEM_RESET>
+
+  
+  
+</CommandBook>

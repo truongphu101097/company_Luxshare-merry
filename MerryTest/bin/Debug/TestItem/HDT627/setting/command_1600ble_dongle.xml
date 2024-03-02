@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CommandBook>
+	<READ_DONGLE_VERSION>
+    <RequestFormat>
+      <packet_type type="uint8" value="0x01" />
+      <opcode_byte1 type="uint8" value="0x00" />
+      <opcode_byte2 type="uint8" value="0xFC" />
+      <packet_len type="uint8" value="__LEN_TO_END__" />
+      <cmd_ocf type="uint8" value="0x11" />
+      <cmd_ogf type="uint8" value="0x36" />     
+      <fixed_pattern type="uint8_array" array_length="*" value="04 04 00 09 00" />
+    </RequestFormat>
+    <ResponseFormat>
+      <packet_type type="uint8" value="0x04" />
+      <event_code type="uint8" value="0xFF" />
+      <packet_len type="uint8" />
+      <cmd_ocf type="uint8" value="0x11" />
+      <cmd_ogf type="uint8" value="0x36" />
+      <status type="uint8" />
+      <dongle_version type="uint8_array" array_length="*" />
+    </ResponseFormat>
+  </READ_DONGLE_VERSION>
+  <!-- HCI SCAN PART-->
+  <HCI_START_SCAN_BLE>
+    <RequestFormat>
+      <packet_type type="uint8" value="0x01" />
+      <opcode_byte1 type="uint8" value="0x00" />
+      <opcode_byte2 type="uint8" value="0xFC" />
+      <packet_len type="uint8" value="__LEN_TO_END__" />
+      <cmd_ocf type="uint8" value="0x0B" />
+      <cmd_ogf type="uint8" value="0x40" />
+      <fixed_pattern type="uint8_array" array_length="*" value="01 10 00 10 00 00 00 00" />
+    </RequestFormat>
+    <ResponseFormat>
+      <packet_type type="uint8" value="0x04" />
+      <event_code type="uint8" value="0xFF" />
+      <packet_len type="uint8" />
+      <cmd_ocf type="uint8" value="0x0B" />
+      <cmd_ogf type="uint8" value="0x40" />
+      <status type="uint8" />
+    </ResponseFormat>
+  </HCI_START_SCAN_BLE>
+  <HCI_SCAN_BLE_RSP>
+    <RequestFormat>
+    </RequestFormat>
+    <ResponseFormat>
+      <packet_type type="uint8" value="0x04" />
+      <event_code type="uint8" value="0xFF" />
+      <packet_len type="uint8" />
+      <cmd_ocf type="uint8" value="0xFF" />
+      <cmd_ogf type="uint8" value="0x40" />
+      <status type="uint8" />
+      <dont_care1 type="uint8" />
+      <peer_addr type="uint8_array" array_length="6" />
+      <rssi type="uint8" />
+      <dont_care2 type="uint8" />
+      <dont_care3 type="uint8" />
+      <addata type="uint8_array" array_length="*" />
+    </ResponseFormat>
+  </HCI_SCAN_BLE_RSP>
+  <HCI_STOP_SCAN_BLE>
+    <RequestFormat>
+      <packet_type type="uint8" value="0x01" />
+      <opcode_byte1 type="uint8" value="0x00" />
+      <opcode_byte2 type="uint8" value="0xFC" />
+      <packet_len type="uint8" value="__LEN_TO_END__" />
+      <cmd_ocf type="uint8" value="0x0C" />
+      <cmd_ogf type="uint8" value="0x40" />
+    </RequestFormat>
+    <ResponseFormat>
+      <packet_type type="uint8" value="0x04" />
+      <event_code type="uint8" value="0xFF" />
+      <packet_len type="uint8" />
+      <cmd_ocf type="uint8" value="0x0C" />
+      <cmd_ogf type="uint8" value="0x40" />
+      <status type="uint8" />
+    </ResponseFormat>
+  </HCI_STOP_SCAN_BLE>
+  <HCI_DONGLE_SOFT_RESET>
+    <RequestFormat>
+      <packet_type type="uint8" value="0x01" />
+      <opcode_byte1 type="uint8" value="0x00" />
+      <opcode_byte2 type="uint8" value="0xFC" />
+      <packet_len type="uint8" value="__LEN_TO_END__" />
+      <cmd_ocf type="uint8" value="0x01" />
+      <cmd_ogf type="uint8" value="0x36" />
+    </RequestFormat>
+    <ResponseFormat>
+      <packet_type type="uint8" value="0x04" />
+      <event_code type="uint8" value="0xFF" />
+      <packet_len type="uint8" />
+      <fixed_pattern type="uint8_array" array_length="*" value="00 00 00" />
+    </ResponseFormat>
+  </HCI_DONGLE_SOFT_RESET>
+
+
+  <!-- BLE CONNECT to DUT -->
+
+
+  <HCI_CONNECT_BLE_TO_DUT>
+    <RequestFormat>
+      <packet_type type="uint8" value="0x01" />
+      <opcode_byte1 type="uint8" value="0x00" />
+      <opcode_byte2 type="uint8" value="0xFC" />
+      <packet_len type="uint8" value="__LEN_TO_END__" />
+      <cmd_ocf type="uint8" value="0x0F" />
+      <cmd_ogf type="uint8" value="0x40" />
+      <dont_care1 type="uint8_array" array_length="5" value="0A 00 0A 00 00" />
+      <peer_addr_type type="uint8" />
+      <peer_addr type="uint8_array" array_length="6" />
+      <dont_care2 type="uint8_array" array_length="13" value="00 27 00 27 00 00 00 90 00 00 00 00 00" />
+    </RequestFormat>
+    <ResponseFormat>
+    </ResponseFormat>
+  </HCI_CONNECT_BLE_TO_DUT>
+  <HCI_CONNECT_BLE_TO_DUT_RSP timeout="3000">
+    <RequestFormat>
+    </RequestFormat>
+    <ResponseFormat>
+      <packet_type type="uint8" value="0x04" />
+      <event_code type="uint8" value="0xFF" />
+      <packet_len type="uint8" />
+      <cmd_ocf type="uint8" value="0x0F" />
+      <cmd_ogf type="uint8" value="0x40" />
+      <status type="uint8" />
+      <dont_care1 type="uint8"/>
+      <handle type="uint16"/>
+      <dont_care2 type="uint8" value="0x00"/>
+      <peer_addr_type type="uint8" />
+      <peer_addr type="uint8_array" array_length="6" />
+      <dont_care3 type="uint8_array" array_length="6" />
+    </ResponseFormat>
+  </HCI_CONNECT_BLE_TO_DUT_RSP>
+  <HCI_DONGLE_CONNECT_CANCEL timeout="3000">
+    <RequestFormat>
+      <packet_type type="uint8" value="0x01" />
+      <opcode_byte1 type="uint8" value="0x00" />
+      <opcode_byte2 type="uint8" value="0xFC" />
+      <packet_len type="uint8" value="__LEN_TO_END__" />
+      <cmd_ocf type="uint8" value="0x10" />
+      <cmd_ogf type="uint8" value="0x40" />
+    </RequestFormat>
+    <ResponseFormat>
+      <packet_type type="uint8" value="0x04" />
+      <event_code type="uint8" value="0xFF" />
+      <packet_len type="uint8" />
+      <cmd_ocf type="uint8" value="0x10" />
+      <cmd_ogf type="uint8" value="0x40" />
+      <status type="uint8" />
+    </ResponseFormat>
+  </HCI_DONGLE_CONNECT_CANCEL>
+  <HCI_DONGLE_DISCONNECT timeout="3000">
+    <RequestFormat>
+      <packet_type type="uint8" value="0x01" />
+      <opcode_byte1 type="uint8" value="0x00" />
+      <opcode_byte2 type="uint8" value="0xFC" />
+      <packet_len type="uint8" value="__LEN_TO_END__" />
+      <cmd_ocf type="uint8" value="0x09" />
+      <cmd_ogf type="uint8" value="0x40" />
+      <handle type="uint16"/>
+      <dont_care1 type="uint8" value="0x15"/>
+    </RequestFormat>
+    <ResponseFormat>
+      <packet_type type="uint8" value="0x04" />
+      <event_code type="uint8" value="0xFF" />
+      <packet_len type="uint8" />
+      <cmd_ocf type="uint8" value="0x09" />
+      <cmd_ogf type="uint8" value="0x40" />
+      <status type="uint8" />
+      <reason type="uint8" />
+      <handle type="uint16"/>
+    </ResponseFormat>
+  </HCI_DONGLE_DISCONNECT>
+
+  <HexCommand name="DongleDisconnect">
+    <Transmit format="01 00 FC %1 09 40 %2 %3 15">
+      <P1>_one_byte_right_count_of_bytes</P1>
+      <P2>handle[0:8]</P2>
+      <P3>handle[8:8]</P3>
+    </Transmit>
+    <Response format="04 FF %% 09 40 %1 %2 %3 %4">
+      <P1>status</P1>
+      <P2>reason</P2>
+      <P3>handle[0:8]</P3>
+      <P4>handle[8:8]</P4>
+    </Response>
+  </HexCommand>
+  <HCI_DONGLE_DISC_ALL_CHAR timeout="3000">
+    <RequestFormat>
+      <packet_type type="uint8" value="0x01" />
+      <opcode_byte1 type="uint8" value="0x00" />
+      <opcode_byte2 type="uint8" value="0xFC" />
+      <packet_len type="uint8" value="__LEN_TO_END__" />
+      <cmd_ocf type="uint8" value="0x05" />
+      <cmd_ogf type="uint8" value="0x42" />
+      <handle type="uint16"/>
+      <dont_care1 type="uint8_array" array_length="4" value="01 00 FF FF" />
+    </RequestFormat>
+    <ResponseFormat>
+      <packet_type type="uint8" value="0x04" />
+      <event_code type="uint8" value="0xFF" />
+      <packet_len type="uint8" />
+      <cmd_ocf type="uint8" value="0x80" />
+      <cmd_ogf type="uint8" value="0x42" />
+      <status type="uint8" />
+      <event_count type="uint8" />
+    </ResponseFormat>
+  </HCI_DONGLE_DISC_ALL_CHAR>
+  <HCI_DONGLE_CHAR_RSP>
+    <RequestFormat>
+    </RequestFormat>
+    <ResponseFormat>
+      <packet_type type="uint8" value="0x04" />
+      <event_code type="uint8" value="0xFF" />
+      <packet_len type="uint8" />
+      <cmd_ocf type="uint8" value="0x05" />
+      <cmd_ogf type="uint8" value="0x42" />
+      <dont_care1 type="uint8" value="0x00"/>
+      <dont_care2 type="uint8_array" array_length="2"/>
+      <att_handle type="uint16" />
+      <type type="uint8" />
+      <dont_care3 type="uint8"/>
+      <data type="uint8_array" array_length="*"/>
+    </ResponseFormat>
+  </HCI_DONGLE_CHAR_RSP>
+  <HCI_DONGLE_DISC_ALL_CHAR_DESC timeout="3000">
+    <RequestFormat>
+      <packet_type type="uint8" value="0x01" />
+      <opcode_byte1 type="uint8" value="0x00" />
+      <opcode_byte2 type="uint8" value="0xFC" />
+      <packet_len type="uint8" value="__LEN_TO_END__" />
+      <cmd_ocf type="uint8" value="0x07" />
+      <cmd_ogf type="uint8" value="0x42" />
+      <dont_care1 type="uint16" value="0x0083" />
+      <att_start_handle type="uint16" />
+      <att_end_handle type="uint16" />
+      <dont_care2 type="uint8" value="0x10"/>
+    </RequestFormat>
+    <ResponseFormat>
+      <packet_type type="uint8" value="0x04" />
+      <event_code type="uint8" value="0xFF" />
+      <packet_len type="uint8" />
+      <cmd_ocf type="uint8" value="0x80" />
+      <cmd_ogf type="uint8" value="0x42" />
+      <status type="uint8" />
+      <event_count type="uint8" />
+    </ResponseFormat>
+  </HCI_DONGLE_DISC_ALL_CHAR_DESC>
+  <HCI_DONGLE_CHAR_DESC_RSP>
+    <RequestFormat>
+    </RequestFormat>
+    <ResponseFormat>
+      <packet_type type="uint8" value="0x04" />
+      <event_code type="uint8" value="0xFF" />
+      <packet_len type="uint8" />
+      <cmd_ocf type="uint8" value="0x07" />
+      <cmd_ogf type="uint8" value="0x42" />
+      <dont_care1 type="uint8" value="0x00"/>
+      <desc_att_handle type="uint16" />
+      <dont_care2 type="uint8" value="0x02"/>
+      <uuid type="uint16" />
+    </ResponseFormat>
+  </HCI_DONGLE_CHAR_DESC_RSP>
+  <HCI_DONGLE_WRITE_CHAR_DESC timeout="1000">
+    <RequestFormat>
+      <packet_type type="uint8" value="0x01" />
+      <opcode_byte1 type="uint8" value="0x00" />
+      <opcode_byte2 type="uint8" value="0xFC" />
+      <packet_len type="uint8" value="__LEN_TO_END__" />
+      <cmd_ocf type="uint8" value="0x12" />
+      <cmd_ogf type="uint8" value="0x42" />
+      <conn_handle type="uint16"/>
+      <att_handle type="uint16" />
+      <dont_care1 type="uint16" value="0x0002"/>
+      <value type="uint16" />
+    </RequestFormat>
+    <ResponseFormat>
+      <packet_type type="uint8" value="0x04" />
+      <event_code type="uint8" value="0xFF" />
+      <packet_len type="uint8" />
+      <cmd_ocf type="uint8" value="0x12" />
+      <cmd_ogf type="uint8" value="0x42" />
+      <status type="uint8" />
+    </ResponseFormat>
+  </HCI_DONGLE_WRITE_CHAR_DESC>
+  <RACE_BLUETOOTH_AWS_ENABLE>
+    <RequestFormat>
+      <packet_type type="uint8" value="0x05" />
+      <race_type type="uint8" value="0x5A" />
+      <packet_len type="uint16" value="__LEN_TO_END__" />
+      <race_id type="uint16" value="0x0CC1" />
+      <onoff type="uint8" />
+    </RequestFormat>
+    <ResponseFormat>
+      <packet_type type="uint8" value="0x05" />
+      <race_type type="uint8" value="0x5B" />
+      <packet_len type="uint16" />
+      <race_id type="uint16" value="0x0CC1" />
+      <status type="uint8" />
+    </ResponseFormat>
+  </RACE_BLUETOOTH_AWS_ENABLE>
+  <DSP_REALTIME_OPEN_ALL_MIC>
+    <RequestFormat>
+      <packet_type type="uint8" value="0x05" />
+      <race_type type="uint8" value="0x5A" />
+      <packet_len type="uint16" value="__LEN_TO_END__" />
+      <race_id type="uint16" value="0x0E12" />
+      <onoff type="uint8" />
+    </RequestFormat>
+    <ResponseFormat>
+      <packet_type type="uint8" value="0x05" />
+      <race_type type="uint8" value="0x5B" />
+      <packet_len type="uint16" />
+      <race_id type="uint16" value="0x0E12" />
+      <status type="uint8" />
+    </ResponseFormat>
+  </DSP_REALTIME_OPEN_ALL_MIC>
+  <DSP_REALTIME_MIC_SWAP>
+    <RequestFormat>
+      <packet_type type="uint8" value="0x05" />
+      <race_type type="uint8" value="0x5A" />
+      <packet_len type="uint16" value="__LEN_TO_END__" />
+      <race_id type="uint16" value="0x0E0C" />
+      <mictype type="uint8" />
+    </RequestFormat>
+    <ResponseFormat>
+      <packet_type type="uint8" value="0x05" />
+      <race_type type="uint8" value="0x5B" />
+      <packet_len type="uint16" />
+      <race_id type="uint16" value="0x0E0C" />
+      <status type="uint8" />
+    </ResponseFormat>
+  </DSP_REALTIME_MIC_SWAP>
+
+  <DSP_REALTIME_AECNR_ON_OFF>
+    <RequestFormat>
+      <packet_type type="uint8" value="0x05" />
+      <race_type type="uint8" value="0x5A" />
+      <packet_len type="uint16" value="__LEN_TO_END__" />
+      <race_id type="uint16" value="0x0E0D" />
+      <onoff type="uint8" />
+    </RequestFormat>
+    <ResponseFormat>
+      <packet_type type="uint8" value="0x05" />
+      <race_type type="uint8" value="0x5B" />
+      <packet_len type="uint16" />
+      <race_id type="uint16" value="0x0E0D" />
+      <status type="uint8" />
+    </ResponseFormat>
+  </DSP_REALTIME_AECNR_ON_OFF>
+
+  <DSP_REALTIME_BYPASS_DIGITAL_GAIN_ON_OFF>
+    <RequestFormat>
+      <packet_type type="uint8" value="0x05" />
+      <race_type type="uint8" value="0x5A" />
+      <packet_len type="uint16" value="__LEN_TO_END__" />
+      <race_id type="uint16" value="0x0E10" />
+      <onoff type="uint8" />
+    </RequestFormat>
+    <ResponseFormat>
+      <packet_type type="uint8" value="0x05" />
+      <race_type type="uint8" value="0x5B" />
+      <packet_len type="uint16" />
+      <race_id type="uint16" value="0x0E10" />
+      <status type="uint8" />
+    </ResponseFormat>
+  </DSP_REALTIME_BYPASS_DIGITAL_GAIN_ON_OFF>
+
+  <RACE_CLEAR_PAIR_INFORMATION>
+    <RequestFormat>
+      <packet_type type="uint8" value="0x05" />
+      <race_type type="uint8" value="0x5A" />
+      <packet_len type="uint16" value="__LEN_TO_END__" />
+      <race_id type="uint16" value="0x0CDF" />
+      <clear_type type="uint8" />
+    </RequestFormat>
+    <ResponseFormat>
+      <packet_type type="uint8" value="0x05" />
+      <race_type type="uint8" value="0x5B" />
+      <packet_len type="uint16" />
+      <race_id type="uint16" value="0x0CDF" />
+      <status type="uint8" />
+    </ResponseFormat>
+  </RACE_CLEAR_PAIR_INFORMATION>
+  
+  <!-- HCI CHANGE MTU-->
+  <HCI_DONGLE_CHANGE_MTU>
+    <RequestFormat>
+      <packet_type type="uint8" value="0x01" />
+      <opcode_byte1 type="uint8" value="0x00" />
+      <opcode_byte2 type="uint8" value="0xFC" />
+      <packet_len type="uint8" value="__LEN_TO_END__" />
+      <cmd_ocf type="uint8" value="0x01" />
+      <cmd_ogf type="uint8" value="0x42" />
+      <conn_handle type="uint16" />
+      <mtu type="uint16" />
+    </RequestFormat>
+    <ResponseFormat>
+      <packet_type type="uint8" value="0x04" />
+      <event_code type="uint8" value="0xFF" />
+      <packet_len type="uint8" />
+      <status type="uint8" />
+      <mtu type="uint16" />
+    </ResponseFormat>
+  </HCI_DONGLE_CHANGE_MTU>
+
+</CommandBook>

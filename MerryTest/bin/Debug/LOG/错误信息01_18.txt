@@ -1,0 +1,49 @@
+﻿2024-01-18 4:46:15 PM
+System.Net.WebException: The operation has timed out
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Config_ini.Class.HttpPostAPI.HttpPost(String url, String Writedata, String Method, String& error) in C:\Users\CH180265\Desktop\test\MerryTest 2023.04.05\Z_AllDll\Config_ini\Class\HttpPostAPI.cs:line 52
+
+2024-01-18 4:46:17 PM
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: S. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.Linq.JArray.Load(JsonReader reader, JsonLoadSettings settings)
+   at Newtonsoft.Json.Linq.JArray.Parse(String json, JsonLoadSettings settings)
+   at Newtonsoft.Json.Linq.JArray.Parse(String json)
+   at MerryDllFramework.VersionControl.CheckAllDLLVersion(Dictionary`2 AllDLL) in C:\Users\CH180265\Desktop\test\MerryTest 2023.04.05\Z_AllDll\Config_ini\Class\VersionControl.cs:line 71
+   at MerryDllFramework.MerryDll.CheckMerryTest() in C:\Users\CH180265\Desktop\test\MerryTest 2023.04.05\Z_AllDll\Config_ini\Config_ini.cs:line 221
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at MerryTest.SingleTestAPI.API.AllDLL.CallMethod(String TKey, String method, Object[] parameter, Boolean& isError, String& error) in E:\2. MEVNSW\1_SourceCode\8_MerryApplication\MECH\MerryTest 2023.07.15\MerryTest\SingleTestAPI\AllDLL.cs:line 157
+Config_ini|CheckMerryTest
+2024-01-18 4:46:21 PM
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A socket operation was attempted to an unreachable host 10.175.5.59:20005
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Config_ini.Class.HttpPostAPI.HttpPost(String url, String Writedata, String Method, String Path, String& Error) in C:\Users\CH180265\Desktop\test\MerryTest 2023.04.05\Z_AllDll\Config_ini\Class\HttpPostAPI.cs:line 97
+
+2024-01-18 4:46:21 PM
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A socket operation was attempted to an unreachable host 10.175.5.59:20005
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Config_ini.Class.HttpPostAPI.HttpPost(String url, String Writedata, String Method, String Path, String& Error) in C:\Users\CH180265\Desktop\test\MerryTest 2023.04.05\Z_AllDll\Config_ini\Class\HttpPostAPI.cs:line 97
+
+2024-01-18 4:46:21 PM
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A socket operation was attempted to an unreachable host 10.175.5.59:20005
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Config_ini.Class.HttpPostAPI.HttpPost(String url, String Writedata, String Method, String Path, String& Error) in C:\Users\CH180265\Desktop\test\MerryTest 2023.04.05\Z_AllDll\Config_ini\Class\HttpPostAPI.cs:line 97
+

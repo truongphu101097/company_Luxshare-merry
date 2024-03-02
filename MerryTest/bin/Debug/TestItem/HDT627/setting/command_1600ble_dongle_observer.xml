@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CommandBook>
+  <HCI_DONGLE_SCAN_RSP>
+    <ResponseFormat>
+      <packet_type type="uint8" value="0x04" />
+      <event_code type="uint8" value="0xFF" />
+      <packet_len type="uint8" />
+      <cmd_ocf type="uint8" value="0xFF" />
+      <cmd_ogf type="uint8" value="0x40" />
+      <status type="uint8" />
+      <dont_care1 type="uint8" />
+      <peer_addr type="uint8_array" array_length="6" />
+      <rssi type="uint8" />
+      <dont_care2 type="uint8" />
+      <dont_care3 type="uint8" />
+      <addata type="uint8_array" array_length="*" />
+    </ResponseFormat>
+  </HCI_DONGLE_SCAN_RSP>
+</CommandBook>

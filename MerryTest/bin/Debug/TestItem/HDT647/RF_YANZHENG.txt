@@ -1,0 +1,6 @@
+﻿1,進電子狗DFU模式,N/A,N/A,N/A,1,EnterDFU
+2,進入电子狗模式,N/A,N/A,N/A,1,DongleModel
+3,LeftRSSI_RF_POWER,N/A,N/A,N/A,3,LeftRSSI_RFTEST
+4,進入耳机模式,N/A,N/A,N/A,1,HeadsetModel
+5,LeftPower_RF_POWER,N/A,N/A,N/A,3,LeftRSSI_RFTEST
+6,退出电子狗DFU模式+,N/A,N/A,N/A,1,ExitDFU

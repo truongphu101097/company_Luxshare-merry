@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CommandBook>
+  <SET_CHARGER>    
+    <RequestFormat>
+      <packet_type type="uint8" value="01" />
+      <hci_cmd_opcode type="uint8_array" array_length="*" value="00 FC" />
+      <packet_len type="uint8" value="__LEN_TO_END__" />
+      <hci_vcmd_opcode type="uint8_array" array_length="*" value="0E 05" />
+      <charger_on type="uint8" />
+    </RequestFormat>
+    <ResponseFormat>
+      <packet_type type="uint8" value="0x04" />
+      <hci_event type="uint8" value="0xFF" />
+      <packet_len type="uint8" />
+      <pattern type="uint8_array" array_length="*" value="00 00" />
+      <status type="uint8" />
+      <pattern2 type="uint8_array" array_length="*" value="0E 05" />
+    </ResponseFormat>
+  </SET_CHARGER>
+  <READ_GPIO>
+    <RequestFormat>
+      <packet_type type="uint8" value="01" />
+      <hci_cmd_opcode type="uint8_array" array_length="*" value="00 FC" />
+      <packet_len type="uint8" value="__LEN_TO_END__" />
+      <hci_vcmd_opcode type="uint8_array" array_length="*" value="78 05" />      
+    </RequestFormat>
+    <ResponseFormat>
+      <packet_type type="uint8" value="0x04" />
+      <hci_event type="uint8" value="0xFF" />
+      <packet_len type="uint8" />
+      <pattern type="uint8_array" array_length="*" value="00 00" />
+      <status type="uint8" />
+      <pattern2 type="uint8_array" array_length="*" value="78 05" />
+      <gpio_value type="uint32" />
+      <gpio_output_enable type="uint32" />
+      <pattern3 type="uint8_array" array_length="*" value="0F 00" />
+    </ResponseFormat>
+  </READ_GPIO>
+  <WRITE_GPIO>
+    <RequestFormat>
+      <packet_type type="uint8" value="01" />
+      <hci_cmd_opcode type="uint8_array" array_length="*" value="00 FC" />
+      <packet_len type="uint8" value="__LEN_TO_END__" />
+      <hci_vcmd_opcode type="uint8_array" array_length="*" value="77 05" />
+      <gpio_value type="uint32" />
+      <gpio_output_enable type="uint32" />
+    </RequestFormat>
+    <ResponseFormat>
+      <packet_type type="uint8" value="0x04" />
+      <hci_event type="uint8" value="0xFF" />
+      <packet_len type="uint8" />
+      <pattern type="uint8_array" array_length="*" value="00 00" />
+      <status type="uint8" />      
+      <pattern2 type="uint8_array" array_length="*" value="77 05" />
+    </ResponseFormat>
+  </WRITE_GPIO>   
+</CommandBook>

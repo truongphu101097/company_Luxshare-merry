@@ -1,0 +1,32 @@
+[18:21:57:992]\\?\hid#dell0a23&col03#5&184b7e16&0&0002#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[18:21:57:993]\\?\hid#dell0a23&col04#5&184b7e16&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[18:21:57:993]\\?\hid#vid_ffff&pid_bace&rev_0002&mi_00&col03#3&258c3fbc&0&0002#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[18:21:57:993]\\?\hid#vid_ffff&pid_bace&rev_0002&mi_00&col04#3&258c3fbc&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[18:21:57:993]\\?\hid#intc816#3&d2322f2&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[18:21:57:993]\\?\hid#vid_ffff&pid_bace&rev_0002&mi_00&col05#3&258c3fbc&0&0004#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[18:21:57:994]\\?\hid#vid_ffff&pid_bace&rev_0002&mi_00&col01#3&258c3fbc&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}\kbd
+[18:21:57:994]\\?\hid#converteddevice&col02#5&32cf90e6&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[18:21:57:994]\\?\hid#converteddevice&col03#5&32cf90e6&0&0002#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[18:21:57:994]\\?\hid#vid_ffff&pid_bace&rev_0002&mi_00&col02#3&258c3fbc&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}\kbd
+[18:21:57:994]\\?\hid#converteddevice&col01#5&32cf90e6&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}\kbd
+[18:21:57:994]\\?\hid#dell0a23&col01#5&184b7e16&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[18:21:57:994]\\?\hid#dell0a23&col02#5&184b7e16&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[18:21:57:994]\\?\hid#vid_046d&pid_c077#6&21f6894a&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+[18:21:57:996]id=VID=FFFF,PID=BACE
+[18:21:57:996]	getCaps=null
+[18:21:57:996]CloseHandleX
+[18:21:57:996]id=VID=FFFF,PID=BACE
+[18:21:57:996]	getCaps=null
+[18:21:57:996]CloseHandleX
+[18:21:57:998]id=VID=FFFF,PID=BACE
+[18:21:57:998]	getCaps=null
+[18:21:57:998]CloseHandleX
+[18:21:57:998]id=VID=FFFF,PID=BACE
+[18:21:57:998]	getCaps=null
+[18:21:57:998]CloseHandleX
+[18:21:57:998]id=VID=FFFF,PID=BACE
+[18:21:57:998]	getCaps=null
+[18:21:57:998]CloseHandleX
+[18:21:57:998]id=VID=046D,PID=C077
+[18:21:57:998]	getCaps=null
+[18:21:57:998]CloseHandleX

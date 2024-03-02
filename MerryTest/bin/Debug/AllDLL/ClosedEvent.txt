@@ -1,0 +1,4 @@
+//窗体关闭事件
+//使用说明行头“//”表示注释此行  ！！指定命名空间：MerryDllFramework  ，指定类：MerryDll
+//文件名称&方法名称 （无参可不输入，多参数用&分割）
+SoundCheck&CloseSoundCheck

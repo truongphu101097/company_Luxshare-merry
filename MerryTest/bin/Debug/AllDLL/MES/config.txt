@@ -1,0 +1,2 @@
+﻿[DB Connection]
+URL=http://10.175.5.101:20001/TestHelper.svc

@@ -1,0 +1,14 @@
+C:\Users\ch200001\source\repos\MerryTest\MerryTest\bin\Release\MerryTest.exe.config
+C:\Users\ch200001\source\repos\MerryTest\MerryTest\bin\Release\MerryTest.exe
+C:\Users\ch200001\source\repos\MerryTest\MerryTest\bin\Release\MerryTest.pdb
+C:\Users\ch200001\source\repos\MerryTest\MerryTest\obj\Release\MerryTest.csproj.AssemblyReference.cache
+C:\Users\ch200001\source\repos\MerryTest\MerryTest\obj\Release\MerryTest.csproj.SuggestedBindingRedirects.cache
+C:\Users\ch200001\source\repos\MerryTest\MerryTest\obj\Release\MerryTest.Heip.resources
+C:\Users\ch200001\source\repos\MerryTest\MerryTest\obj\Release\MerryTest.Station.resources
+C:\Users\ch200001\source\repos\MerryTest\MerryTest\obj\Release\MerryTest.userLogin.resources
+C:\Users\ch200001\source\repos\MerryTest\MerryTest\obj\Release\MerryTest.MerryTest.resources
+C:\Users\ch200001\source\repos\MerryTest\MerryTest\obj\Release\MerryTest.Properties.Resources.resources
+C:\Users\ch200001\source\repos\MerryTest\MerryTest\obj\Release\MerryTest.csproj.GenerateResource.cache
+C:\Users\ch200001\source\repos\MerryTest\MerryTest\obj\Release\MerryTest.csproj.CoreCompileInputs.cache
+C:\Users\ch200001\source\repos\MerryTest\MerryTest\obj\Release\MerryTest.exe
+C:\Users\ch200001\source\repos\MerryTest\MerryTest\obj\Release\MerryTest.pdb

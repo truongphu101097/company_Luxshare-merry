@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>STM8</name>
+    </assembly>
+    <members>
+        <member name="M:Common.Box.SetForegroundWindow(System.IntPtr)">
+            <summary>
+            将该指针的窗口设为活动窗口
+            </summary>
+            <param name="hWnd"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Common.Box.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Common.Box.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Common.Box.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:MerryDllFramework.MerryDll.MessageBox(System.String)">
+            <summary dllName="STM8">
+            通用测试类
+            </summary>
+        </member>
+        <member name="M:MerryDllFramework.MerryDll.StartRead">
+            <summary isPublicTestItem="true">
+            开始读取电流
+            </summary>
+            <param name="ComPort" options="COM1,COM200">COMPORT名称</param>
+            <param name="baudRate" options="9600,57600,118200">速度</param>
+            <returns>浮点数或报错信息</returns>
+        </member>
+        <member name="M:MerryDllFramework.MerryDll.value1">
+            <summary isPublicTestItem="true">
+            第一通道的电流
+            </summary>
+            <returns>浮点数或报错信息</returns>
+        </member>
+        <member name="M:MerryDllFramework.MerryDll.value2">
+            <summary isPublicTestItem="true">
+            第二通道的电流
+            </summary>
+            <returns>浮点数或报错信息</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:MerryDllFramework.MerryDll.value3" -->
+        <!-- Badly formed XML comment ignored for member "M:MerryDllFramework.MerryDll.value4" -->
+        <!-- Badly formed XML comment ignored for member "M:MerryDllFramework.MerryDll.value5" -->
+        <!-- Badly formed XML comment ignored for member "M:MerryDllFramework.MerryDll.value6" -->
+        <!-- Badly formed XML comment ignored for member "M:MerryDllFramework.MerryDll.value7" -->
+        <!-- Badly formed XML comment ignored for member "M:MerryDllFramework.MerryDll.value8" -->
+        <!-- Badly formed XML comment ignored for member "M:MerryDllFramework.MerryDll.value9" -->
+        <!-- Badly formed XML comment ignored for member "M:MerryDllFramework.MerryDll.value10" -->
+        <member name="M:MerryDllFramework.MerryDll.current(System.String)">
+            <summary isPublicTestItem="true">
+            开始读取电流
+            </summary>
+            <param name="ComPort" options="COM1,COM200">COMPORT名称</param>
+            <param name="baudRate" options="9600,57600,118200">速度</param>
+            <returns>浮点数或报错信息</returns>
+        </member>
+        <member name="M:MerryDllFramework.IMerryAllDll.Run(System.Object[])">
+            <summary>
+            调用内部方法
+            </summary>
+            <param name="message">指令，决定调用哪个方法</param>
+            <returns>方法调用后回传值</returns>
+        </member>
+    </members>
+</doc>

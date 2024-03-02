@@ -1,0 +1,48 @@
+﻿11/07 14:21:19.533 0.030 I tool_version: 2.9.0/V2.9.0_20220114_081940/v2.9.2_2021_12_28_16_45_51/geneva-dev-maindev
+11/07 14:21:19.506 0.003 I SetLogLevel: 2
+11/07 14:21:19.506 0.003 D set log_level=2
+11/07 14:21:19.506 0.003 D [task_time][ToolLogLevel] spend 0.002
+11/07 14:21:19.506 0.003 V [task_end][ToolLogLevel] ------------------------------------------
+11/07 14:21:19.507 0.004 V arg[airoha_task]=airoha_cmd
+11/07 14:21:19.507 0.004 V [task] airoha_cmd, class: AirohaCommandTask
+11/07 14:21:19.507 0.004 V [task_start][airoha_cmd] +++++++++++++++++++++++
+11/07 14:21:19.507 0.004 V arg[device_name]=DUT_HEADSET
+11/07 14:21:19.507 0.004 E [dev_mgr] device not found: DUT_HEADSET
+11/07 14:21:19.507 0.004 E [exception] airoha_command.cc:93(-1): [airoha_cmd] device not found: DUT_HEADSET
+11/07 14:21:19.507 0.004 E [task] Fail to execute RunTask() of airoha_cmd object
+11/07 14:21:19.507 0.004 D [task_time][airoha_cmd] spend 0.000
+11/07 14:21:19.507 0.004 V [task_end][airoha_cmd] ------------------------------------------
+11/07 14:21:19.507 0.004 V arg[airoha_task]=airoha_cmd
+11/07 14:21:19.507 0.004 V [task] airoha_cmd, class: AirohaCommandTask
+11/07 14:21:19.507 0.004 V [task_start][airoha_cmd] +++++++++++++++++++++++
+11/07 14:21:19.507 0.004 V arg[device_name]=DUT_HEADSET
+11/07 14:21:19.507 0.004 E [dev_mgr] device not found: DUT_HEADSET
+11/07 14:21:19.508 0.005 E [exception] airoha_command.cc:93(-1): [airoha_cmd] device not found: DUT_HEADSET
+11/07 14:21:19.508 0.005 E [task] Fail to execute RunTask() of airoha_cmd object
+11/07 14:21:19.508 0.005 D [task_time][airoha_cmd] spend 0.001
+11/07 14:21:19.508 0.005 V [task_end][airoha_cmd] ------------------------------------------
+11/07 14:21:19.508 0.005 V arg[airoha_task]=DisconnectDUTByUsbHid
+11/07 14:21:19.508 0.005 V [task] DisconnectDUTByUsbHid, class: ConnectDevice
+11/07 14:21:19.508 0.005 V [task_start][DisconnectDUTByUsbHid] +++++++++++++++++++++++
+11/07 14:21:19.508 0.005 V arg[device_name]=DUT_DONGLE
+11/07 14:21:19.508 0.005 V arg[device_type]=USB_HID
+11/07 14:21:19.508 0.005 V arg[action]=disconnect
+11/07 14:21:19.508 0.005 V arg[port]=
+11/07 14:21:19.508 0.005 D [UartDevice] Disconnect
+11/07 14:21:19.508 0.005 D [DisconnectDUTByUsbHid] disconnect: DUT_DONGLE(USB_HID)
+11/07 14:21:19.508 0.005 D [task_time][DisconnectDUTByUsbHid] spend 0.000
+11/07 14:21:19.508 0.005 V [task_end][DisconnectDUTByUsbHid] ------------------------------------------
+11/07 14:21:19.509 0.006 V [transact] result="pass"
+11/07 14:21:20.610 1.107 V arg[airoha_task]=DisconnectDUTByUsbHid
+11/07 14:21:20.610 1.107 V [task] DisconnectDUTByUsbHid, class: ConnectDevice
+11/07 14:21:20.610 1.107 V [task_start][DisconnectDUTByUsbHid] +++++++++++++++++++++++
+11/07 14:21:20.610 1.107 V arg[device_name]=DUT_HEADSET
+11/07 14:21:20.610 1.107 V arg[device_type]=USB_HID
+11/07 14:21:20.610 1.107 V arg[action]=disconnect
+11/07 14:21:20.610 1.107 V arg[port]=
+11/07 14:21:20.610 1.107 D [UartDevice] Disconnect
+11/07 14:21:20.610 1.107 D [DisconnectDUTByUsbHid] disconnect: DUT_HEADSET(USB_HID)
+11/07 14:21:20.610 1.107 D [task_time][DisconnectDUTByUsbHid] spend 0.000
+11/07 14:21:20.610 1.107 V [task_end][DisconnectDUTByUsbHid] ------------------------------------------
+11/07 14:21:20.610 1.107 V [transact] result="pass"
+11/07 14:21:21.538 2.035 V [log_file_sync]

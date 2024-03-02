@@ -1,0 +1,10 @@
+﻿0,-Check SQC Version,N/A,N/A,N/A,6,dllname=SoundCheck_V1&method=ControlSequence
+0,-MicVolume,N/A,N/A,N/A,4,dllname=Audio_V1&method=SetMicVolume&DeviceName=G733&MicVolume=100
+0,-SpkVolume,N/A,N/A,N/A,4,dllname=Audio_V1&method=SetSpkVolume&DeviceName=G733&SpkVolume=100
+1,UID,N/A,N/A,N/A,6,dllname=MES&method=UID_Master&IsSMT=false&PN_Name=PCB ASS’Y HDT627N007_L-M V2.0.6 MEVN
+2,SetMicNROffByHID,N/A,N/A,N/A,3,SetMicNROffByHID
+0,-2S,N/A,N/A,N/A,6,dllname=Common&method=Sleep&时间=2000
+3,RunSoundcheck,N/A,N/A,N/A,6,dllname=SoundCheck_V1&method=StartTestB&Sleep=100&RunSequenceFlag=True
+4,GetSoundcheckResults,N/A,N/A,N/A,4,dllname=SoundCheck_V1&method=GetFinalResults
+5,GetVoltageByDongle|2,N/A,3.75,4.0,2,GetVoltageByDongle
+0,-Soundcheck Data Upload,N/A,N/A,N/A,4,dllname=SoundCheck_V1&method=UploadLogiAcousticsData

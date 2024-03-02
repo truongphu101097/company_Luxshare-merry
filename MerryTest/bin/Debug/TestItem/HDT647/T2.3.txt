@@ -1,0 +1,1 @@
+1,PERCENT,N/A,0,1,2,HanOpticSens

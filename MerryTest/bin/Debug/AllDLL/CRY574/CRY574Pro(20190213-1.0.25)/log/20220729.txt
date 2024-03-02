@@ -1,0 +1,31 @@
+Fri Jul 29 14:19:06 2022  [TRACE]: Start Monitor
+Fri Jul 29 14:19:06 2022  [INFO]: send:set bt power 6 6 6
+
+Fri Jul 29 14:19:06 2022  [INFO]: send:set bt auth * 0000
+
+Fri Jul 29 14:19:06 2022  [INFO]: send:SET CONTROL CODEC SBC JOINT_STEREO 44100 1
+
+Fri Jul 29 14:19:06 2022  [INFO]: send:SET CONTROL CODEC APT-X JOINT_STEREO 44100 0
+
+Fri Jul 29 14:19:06 2022  [INFO]: RECV:SYNTAX ERROR
+
+Fri Jul 29 14:19:07 2022  [TRACE]: <=============================== START OF PROGRAM ===============================>
+Fri Jul 29 14:19:10 2022  [INFO]: send:close 0close 1close 2close 3close 4close 5
+
+Fri Jul 29 14:19:10 2022  [INFO]: RECV:NO CARRIER 0 ERROR 0 NO_LINK
+NO CARRIER 1 ERROR 0 NO_LINK
+NO C
+Fri Jul 29 14:19:10 2022  [INFO]: RECV:ARRIER 2 ERROR 0 NO_LINK
+NO CARRIER 3 ERROR 0 NO_LINK
+NO CARRI
+Fri Jul 29 14:19:10 2022  [INFO]: RECV:ER 4 ERROR 0 NO_LINK
+NO CARRIER 5 ERROR 0 NO_LINK
+
+Fri Jul 29 14:19:10 2022  [INFO]: send:RESET
+
+Fri Jul 29 14:19:11 2022  [INFO]: RECV: Technologies Inc.
+
+Fri Jul 29 14:19:11 2022  [INFO]: RECV:READY.
+
+Fri Jul 29 14:19:12 2022  [TRACE]: Stop Monitor
+Fri Jul 29 14:19:12 2022  [TRACE]: <=============================== END OF PROGRAM ===============================>

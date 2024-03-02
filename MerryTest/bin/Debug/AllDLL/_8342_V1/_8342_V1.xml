@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>_8342_V1</name>
+    </assembly>
+    <members>
+        <member name="T:MerryDllFramework.MerryDll">
+            <summary dllName="_8342_V1">
+            _8342_V1 电流表
+            </summary>
+        </member>
+        <member name="M:MerryDllFramework.MerryDll.A_DC(System.String,System.Int32)">
+            <summary isPublicTestItem="true">
+            电流直流电
+            </summary>
+            <param name="NewRange" options="5,0.5,0.0005">量程</param>
+            <param name="Count">测试次数</param>
+            <returns>浮点数或报错信息</returns>
+        </member>
+        <member name="M:MerryDllFramework.MerryDll.A_DC_Center(System.String,System.Int32)">
+            <summary isPublicTestItem="true">
+            电流直流电
+            </summary>
+            <param name="NewRange" options="5,0.5,0.0005">量程</param>
+            <param name="Count">测试次数</param>
+            <returns>浮点数或报错信息</returns>
+        </member>
+        <member name="M:MerryDllFramework.MerryDll.A_AC(System.String,System.Int32)">
+            <summary isPublicTestItem="true">
+            电流交流电
+            </summary>
+            <param name="NewRange" options="5,0.5,0.0005">量程</param>
+            <param name="Count">测试次数</param>
+            <returns>浮点数或报错信息</returns>
+        </member>
+        <member name="M:MerryDllFramework.MerryDll.V_DC(System.String,System.Int32)">
+            <summary isPublicTestItem="true">
+            电压直流电
+            </summary>
+            <param name="NewRange" options="5,0.5,0.0005">量程</param>
+            <param name="Count">测试次数</param>
+            <returns>浮点数或报错信息</returns>
+        </member>
+        <member name="M:MerryDllFramework.MerryDll.V_AC(System.String,System.Int32)">
+            <summary isPublicTestItem="true">
+            电压交流电
+            </summary>
+            <param name="NewRange" options="5,0.5,0.0005">量程</param>
+            <param name="Count">测试次数</param>
+            <returns>浮点数或报错信息</returns>
+        </member>
+        <member name="M:MerryDllFramework.MerryDll.RES(System.String,System.Int32)">
+            <summary isPublicTestItem="true">
+            电阻
+            </summary>
+            <param name="NewRange" options="5,0.5,0.0005">量程</param>
+            <param name="Count">测试次数</param>
+            <returns>浮点数或报错信息</returns>
+        </member>
+        <member name="M:MerryDllFramework.MerryDll.Hz_P(System.String,System.Int32)">
+            <summary isPublicTestItem="true">
+            频率
+            </summary>
+            <param name="NewRange" options="5,0.5,0.0005">量程</param>
+            <param name="Count">读取次数</param>
+            <returns>浮点数或报错信息</returns>
+        </member>
+        <member name="M:MerryDllFramework.MerryDll.DIODe(System.Int32)">
+            <summary isPublicTestItem="true">
+            二极管测量
+            </summary>
+            <param name="Conut">读取次数</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

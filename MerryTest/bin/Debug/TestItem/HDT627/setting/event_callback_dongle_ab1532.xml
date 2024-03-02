@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CommandBook>  
+  <!-- command_dongle_ab1532.xml start -->
+  <RACE_AIR_DONGLE_INQUIRY_INDICATION>
+    <RequestFormat>
+    </RequestFormat>
+    <ResponseFormat>
+      <packet_type type="uint8" value="0x05" />
+      <race_type type="uint8" value="0x5D" />
+      <packet_len type="uint16" />
+      <packet_id type="uint16" value="0x0CE1" />
+      <data type="uint8_array" array_length="*" />
+    </ResponseFormat>
+  </RACE_AIR_DONGLE_INQUIRY_INDICATION>
+  <RACE_AIR_DONGLE_INQUIRY_COMPELTE>
+    <RequestFormat>
+    </RequestFormat>
+    <ResponseFormat>
+      <packet_type type="uint8" value="0x05" />
+      <race_type type="uint8" value="0x5D" />
+      <packet_len type="uint16" />
+      <race_id type="uint16" value="0x0CE2" />
+      <status type="uint8" />
+    </ResponseFormat>
+  </RACE_AIR_DONGLE_INQUIRY_COMPELTE>
+  <!-- command_dongle_ab1532.xml end -->
+</CommandBook>

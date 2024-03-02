@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Otp_A_Die>
+  <!-- OTP list -->
+  <OTP_VBAT>
+    <OtpFormat>
+      <ft_kflag type="uint8" value="0x01" />
+      <voltage0 type="uint16" value="0x10FE" />
+      <adc0 type="uint16" value="0x02CE" />
+      <voltage1 type="uint16" value="0x1068" />
+      <adc1 type="uint16" value="0x02B6" />
+      <voltage2 type="uint16" value="0x0BB8" />
+      <adc2 type="uint16" value="0x01EF" />
+    </OtpFormat>
+  </OTP_VBAT>
+  <Buck_MV>
+    <ft_kflag type="uint8" value="0x01" />
+    <voltage0 type="uint16" value="0x0000" />
+    <sel0 type="uint8" value="0x0D" />
+    <voltage1 type="uint16" value="0x0000" />
+    <sel1 type="uint8" value="0x17" />
+  </Buck_MV>
+  <Buck_MV_Freq>
+    <ft_kflag type="uint8" value="0x01" />
+    <frequency type="uint16" value="0x0000" />
+    <freq_trim type="uint8" value="0x17" />
+    <freqk_trim type="uint8" value="0x17" />
+  </Buck_MV_Freq>
+</Otp_A_Die>

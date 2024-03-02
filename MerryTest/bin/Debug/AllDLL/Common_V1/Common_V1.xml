@@ -1,0 +1,498 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Common_V1</name>
+    </assembly>
+    <members>
+        <member name="M:Common_V1.AwaitThreads.AwaitThread(System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary isPublicTestItem="true">
+            等待所有线程后开始测试
+            </summary>
+            <returns>True</returns>
+        </member>
+        <member name="F:Common_V1.Box.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Common_V1.Box.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Common_V1.Box.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Common_V1.GetHandle">
+            <summary>
+            获取句柄类
+            </summary>
+        </member>
+        <member name="F:Common_V1.GetHandle.headsethandle">
+            <summary>
+            Headset句柄对象数组
+            </summary>
+        </member>
+        <member name="F:Common_V1.GetHandle.donglehandle">
+            <summary>
+            Dongle句柄对象数组
+            </summary>
+        </member>
+        <member name="F:Common_V1.GetHandle.headsetpath">
+            <summary>
+            Headset句柄地址
+            </summary>
+        </member>
+        <member name="F:Common_V1.GetHandle.donglepath">
+            <summary>
+            Dongle句柄地址
+            </summary>
+        </member>
+        <member name="M:Common_V1.GetHandle.gethandle(System.String,System.String,System.String,System.String)">
+            <summary>
+            抓取句柄 donglePIDVID不能为NULL
+            </summary>
+            <param name="headsetPID">headsetPID</param>
+            <param name="headsetVID">headsetVID</param>
+            <param name="donglePID">donglePID</param>
+            <param name="dongleVID">dongleVID</param>
+            <returns>抓取是否成功</returns>
+        </member>
+        <member name="M:Common_V1.GetHandle.CloseHandle">
+            <summary>
+            释放句柄
+            </summary>
+        </member>
+        <member name="T:Common_V1.KeyboardHook">
+            <summary>
+            键盘钩子/// </summary>
+        </member>
+        <member name="T:Common_V1.MessageBoxs">
+            <summary>
+            弹窗
+            </summary>
+        </member>
+        <member name="F:Common_V1.MessageBoxs.names">
+            <summary>
+            窗体名
+            </summary>
+        </member>
+        <member name="F:Common_V1.MessageBoxs.message">
+            <summary>
+            窗体信息
+            </summary>
+        </member>
+        <member name="F:Common_V1.MessageBoxs.length">
+            <summary>
+            窗体条码框长度
+            </summary>
+        </member>
+        <member name="F:Common_V1.MessageBoxs.barcode">
+            <summary>
+            条码框输入值
+            </summary>
+        </member>
+        <member name="F:Common_V1.MessageBoxs.color">
+            <summary>
+            窗体颜色
+            </summary>
+        </member>
+        <member name="F:Common_V1.MessageBoxs.SN">
+            <summary>
+            不良SN
+            </summary>
+        </member>
+        <member name="F:Common_V1.MessageBoxs.uploadmes">
+            <summary>
+            是否Y,N检测按键
+            </summary>
+        </member>
+        <member name="M:Common_V1.MessageBoxs.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="F:Common_V1.MessageBoxs.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Common_V1.MessageBoxs.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Common_V1.MessageBoxs.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Common_V1.ProgressBars.FindWindow(System.String,System.String)">
+            <summary>
+            控制窗体
+            </summary>
+            <param name="lpClassName">传null</param>
+            <param name="lpWindowName">需要控制窗体得名字</param>
+            <returns></returns>
+        </member>
+        <member name="M:Common_V1.ProgressBars.PostMessage(System.IntPtr,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            结束窗体
+            </summary>
+            <param name="hWnd">信息发往的窗口的句柄</param>
+            <param name="Msg">消息ID ：0x10</param>
+            <param name="wParam">参数1 ：</param>
+            <param name="lParam">参数2 ：0</param>
+            <returns></returns>
+        </member>
+        <member name="F:Common_V1.ProgressBars.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Common_V1.ProgressBars.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Common_V1.ProgressBars.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Common_V1.MySqlHelper">
+            <summary>
+            Mysql数据库操作类,由于读取数据库操作过于简单，不使用ORM框架
+            </summary>
+        </member>
+        <member name="M:Common_V1.MySqlHelper.Open">
+            <summary>
+            判断数据库是否连接成功
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Common_V1.MySqlHelper.GetData(System.String,System.String[][]@)">
+            <summary>
+            查询多条数据--数组集合
+            </summary>
+            <returns>返回字符串数组集合结果</returns>
+        </member>
+        <member name="M:Common_V1.MySqlHelper.ExecuteSql(System.String)">
+            <summary>
+            增删改
+            </summary>
+            <returns>返回执行是否成功</returns>
+        </member>
+        <member name="M:Common_V1.MySqlTestData.IsOpen">
+            <summary>
+            判断数据库是否连接成功
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Common_V1.MySqlTestData.GetDataList(System.String)">
+            <summary>
+            查询多条数据--数组集合
+            </summary>
+            <returns>返回字符串数组集合结果</returns>
+        </member>
+        <member name="M:Common_V1.MySqlTestData.ExecuteSql(System.String,System.String)">
+            <summary>
+            增删改
+            </summary>
+            <returns>返回执行是否成功</returns>
+        </member>
+        <member name="M:Common_V1.HttpPostAPI.HttpPost(System.String,System.String,System.String)">
+            <summary>
+            调用API 数据库
+            </summary>
+            <param name="url">连接地址</param>
+            <param name="data">数据及格式</param>
+            <returns></returns>
+        </member>
+        <member name="M:Common_V1.HttpPostAPI.HttpPost(System.String,System.String,System.String,System.String,System.String@)">
+            <summary>
+            调用API 版本控制系统
+            </summary>
+            <param name="url"></param>
+            <param name="TestName"></param>
+            <param name="DownloadName"></param>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Common_V1.HttpPostAPI.HttpPost(System.String,System.String)" -->
+        <member name="M:Common_V1.HttpPostAPI.HttpPostData(System.String,System.Int32,System.String,System.String,System.String,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Post方式上传文件
+            </summary>
+            <param name="url">传入接口地址</param>
+            <param name="timeOut">传入超时时间</param>
+            <param name="fileKeyName">传入文件上传接口接收文件的名称</param>
+            <param name="fileName">传入文件名加后缀</param>
+            <param name="filePath">传入文件本地路径</param>
+            <param name="stringDict">传入键值对</param>
+            <returns></returns>
+        </member>
+        <member name="M:Common_V1._image.CompressImage(System.Boolean)">
+            <summary>
+            压缩图片
+            </summary>
+            <param name="bitmap">原图片</param>
+            <param name="ms">内存流</param>
+        </member>
+        <member name="M:Common_V1._image.DrawCursorImageToScreenImage(System.Drawing.Graphics@)">
+            <summary>
+            将鼠标指针形状绘制到屏幕截图上
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="M:Common_V1._image.getImageCoderInfo(System.String)">
+            <summary>  
+            获取图片编码信息  
+            </summary>  
+            <param name="coderType">编码类型</param>  
+            <returns>ImageCodecInfo</returns>  
+        </member>
+        <member name="T:MerryTest.Entity.UIAdaptiveSize">
+            <summary>
+            记录最初始控件大小类
+            </summary>
+        </member>
+        <member name="F:MerryTest.Entity.UIAdaptiveSize.Width">
+            <summary>
+            窗体初始宽度
+            </summary>
+        </member>
+        <member name="F:MerryTest.Entity.UIAdaptiveSize.Height">
+            <summary>
+            窗体初始高度
+            </summary>
+        </member>
+        <member name="F:MerryTest.Entity.UIAdaptiveSize.FormsName">
+            <summary>
+            窗体名字
+            </summary>
+        </member>
+        <member name="M:MerryTest.Entity.UIAdaptiveSize.SetInitSize(System.Windows.Forms.Control)">
+            <summary>
+            存储窗体控件初始大小
+            </summary>
+            <param name="cons">窗体对象（一般为this）</param>
+        </member>
+        <member name="M:MerryTest.Entity.UIAdaptiveSize.UpdateSize(System.Single,System.Single,System.Windows.Forms.Control)">
+            <summary>
+            修改窗体控件大小
+            </summary>
+            <param name="x">改变后宽度</param>
+            <param name="y">改变后高度</param>
+            <param name="cons"></param>
+        </member>
+        <member name="T:MerryDllFramework.MerryDll">
+            <summary dllName="Common_V1">
+            通用测试类
+            </summary>
+        </member>
+        <member name="M:MerryDllFramework.MerryDll.Cut_OffRule____">
+            <summary isPublicTestItem="true">
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 串口区 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MerryDllFramework.MerryDll.WriteTextSerialPort(System.String,System.Int32,System.String)">
+            <summary isPublicTestItem="true">
+            串口下字符串指令
+            </summary>
+            <param name="PortName">串口号 比如COM1 连扳可填Null 连扳字段ComPort</param>
+            <param name="Baudrate">波特率 比如9600</param>
+            <param name="Command"> 指令 可输入\r 或 \n 程序会对应转译</param>
+            <returns>info</returns>
+        </member>
+        <member name="M:MerryDllFramework.MerryDll.WriteHexSerialPort(System.String,System.Int32,System.String)">
+            <summary isPublicTestItem="true">
+            串口下十六进制指令
+            </summary>
+            <param name="PortName">串口号 比如COM1 连扳可填Null 连扳字段ComPort</param>
+            <param name="Baudrate">波特率 比如9600</param>
+            <param name="Command">十六进制指令 空格分隔</param>
+            <returns>info</returns>
+        </member>
+        <member name="M:MerryDllFramework.MerryDll.ResponseSerialPort(System.String,System.Int32,System.String,System.String,System.Int32,System.String)">
+            <summary isPublicTestItem="true">
+            串口下指令 并 检查包含返回值
+            </summary>
+            <param name="PortName">串口号 比如COM1 连扳可填Null 连扳字段ComPort</param>
+            <param name="Baudrate">波特率 比如9600</param>
+            <param name="Command">字符串指令</param>
+            <param name="ContentString">返回值包含的字符串</param>
+            <param name="TimeOut">检查超时/秒 常规 10</param>
+            <param name="MSG">提示信息</param>
+            
+            <returns>info</returns>
+        </member>
+        <member name="M:MerryDllFramework.MerryDll.PowerFrequency(System.String,System.Boolean,System.Boolean,System.Int32)">
+            <summary isPublicTestItem="true">
+            串口电频调节
+            </summary>
+            <param name="ComPort">串口号 比如 COM1 连扳可填Null 连扳字段ComPort</param>
+            <param name="Dtr" options="True,False">4脚 True为高电频</param>
+            <param name="Rts" options="True,False">7脚 True为高电频</param>
+            <param name="millisecond">几毫秒后恢复</param>
+            <returns>True or False</returns>
+        </member>
+        <member name="M:MerryDllFramework.MerryDll.Cut_OffRule_____">
+            <summary isPublicTestItem="true">
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 呼叫CMD区 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MerryDllFramework.MerryDll.CallCMD(System.Boolean,System.String,System.String,System.String,System.Boolean)">
+            <summary isPublicTestItem="true">
+            呼叫 CMD 运行程序
+            </summary>
+            <param name="isWait" options="True,False"> 是否等待完成 不用等待选“False”</param>
+            <param name="WorkingDirectory">文件夹路径 相对路径输“default” 相对路径会切到机型目录下</param>
+            <param name="Command">比如 TransportUnlock.exe args1 args2 args3</param>
+            <param name="TimeOut">超时 单位/秒 选择异步完成可输入 “1”</param>
+            <param name="isSaveLog" options="True,False">是否保存交互记录  选“True”可以在LOG文件夹找到CMDlog txt 默选“False”</param>
+            <returns></returns>
+        </member>
+        <member name="M:MerryDllFramework.MerryDll.ResponseCallCMD(System.String,System.String,System.String,System.String,System.Boolean,System.Boolean)">
+            <summary isPublicTestItem="true">
+            呼叫 CMD 运行程序抓返回值
+            </summary>
+            <param name="WorkingDirectory">文件夹路径 相对路径输“default” 相对路径会切到机型目录下</param>
+            <param name="Command">比如 TransportUnlock.exe args1 args2 args3</param>
+            <param name="ResponseStr">响应的字符串用“|”分割 比如 succeed|success|100%</param>
+            <param name="TimeOut">超时 单位/秒 选择异步完成可输入 “1”</param>
+            <param name="isSaveLog" options="True,False">是否保存交互记录  选“True”可以在LOG文件夹找到CMDlog txt 默选“False”</param>
+            <returns></returns>
+        </member>
+        <member name="M:MerryDllFramework.MerryDll.Cut_OffRule">
+            <summary isPublicTestItem="true">
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 线程区 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MerryDllFramework.MerryDll.Sleep(System.String)">
+            <summary isPublicTestItem="true">
+            延时
+            </summary>
+            <param name="millisecond">毫秒 千分之一秒</param>
+            <returns> True </returns>
+        </member>
+        <member name="M:MerryDllFramework.MerryDll.LockSleep(System.String)">
+            <summary isPublicTestItem="true">
+            线程排队延时
+            </summary>
+            <param name="millisecond">毫秒 千分之一秒</param>
+            <returns>True</returns>
+        </member>
+        <member name="M:MerryDllFramework.MerryDll.LockItem(System.String)">
+            <summary isPublicTestItem="true">
+            项目锁 用于需要排队测试的项目
+            </summary>
+            <param name="number">给锁赐予的编号  1号锁只能1号解锁</param>
+            <returns>True</returns>
+        </member>
+        <member name="M:MerryDllFramework.MerryDll.UnlockItem(System.String)">
+            <summary isPublicTestItem="true">
+            项目解锁
+            </summary>
+            <param name="number">锁的编号 1号解锁只能解1号锁</param>
+            <returns>True</returns>
+        </member>
+        <member name="M:MerryDllFramework.MerryDll.AwaitThreads(System.String)">
+            <summary isPublicTestItem="true">
+            等待所有线程
+            </summary>
+            <param name="number">等待的编号</param>
+            <returns></returns>
+        </member>
+        <member name="M:MerryDllFramework.MerryDll.Cut_OffRule_">
+            <summary isPublicTestItem="true">
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 辅助区 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MerryDllFramework.MerryDll.Screenshot(System.String,System.Boolean)">
+            <summary isPublicTestItem="true">
+            截屏
+            </summary>
+            <param name="IsSaveImg" options="Fail,Pass,All">“Fail”表示测试失败才会截图储存</param>
+            <param name="isUploadServer" options="True,False">“True”表示上传服务器</param>
+            <returns></returns>
+        </member>
+        <member name="M:MerryDllFramework.MerryDll.GetNewSN">
+            <summary isPublicTestItem="true">
+            获取时间进制21码SN
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MerryDllFramework.MerryDll.GetVirtualSerialNumber">
+            <summary isPublicTestItem="true">
+            获取TE库有编码原则的SN
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MerryDllFramework.MerryDll.EqualsDynamicCode(System.String,System.Int32)">
+            <summary isPublicTestItem="true">
+            检测程序动态密码
+            </summary>
+            <param name="Message">弹窗信息</param>
+            <param name="Length">密码长度</param>
+            <returns>info</returns>
+        </member>
+        <member name="M:MerryDllFramework.MerryDll.MessageBox(System.String)">
+            <summary isPublicTestItem="true">
+            弹框提示信息
+            </summary>
+            <param name="Message">显示在弹框的信息</param>
+            <returns>True or False</returns>
+        </member>
+        <member name="M:MerryDllFramework.MerryDll.Cut_OffRule__">
+            <summary isPublicTestItem="true">
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ USB设备区 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MerryDllFramework.MerryDll.DisableDevice">
+            <summary isPublicTestItem="true">
+            禁用USB装置 必须跟启用USB装置搭配使用（只支持连扳，需要设定Device_ID）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MerryDllFramework.MerryDll.EnableDevice">
+            <summary isPublicTestItem="true">
+            启用USB装置必须设定必须执行项目（只支持连扳，需要设定Device_ID）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MerryDllFramework.MerryDll.AwaitDevice(System.String,System.String,System.Int32,System.String)">
+            <summary isPublicTestItem="true">
+            等待装置识别
+            </summary>
+            <param name="VID">VID</param>
+            <param name="PID">PID</param>
+            <param name="TimeOut">检查超时/秒 常规 8</param>
+            <param name="MSG">提示信息</param>
+            <returns>info</returns>
+        </member>
+        <member name="M:MerryDllFramework.MerryDll.AwaitRemoveDevice(System.String,System.String,System.Int32,System.String)">
+            <summary isPublicTestItem="true">
+            等待装置移除
+            </summary>
+            <param name="VID">VID</param>
+            <param name="PID">PID</param>
+            <param name="TimeOut">检查超时/秒 常规 8</param>
+            <param name="MSG">提示信息</param>
+            <returns>info</returns>
+        </member>
+    </members>
+</doc>

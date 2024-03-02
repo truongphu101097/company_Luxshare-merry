@@ -1,0 +1,13 @@
+﻿1,UID,N/A,N/A,N/A,6,dllname=MES&method=LogiUIDForIndex&IsSMT=false&Index=1
+2,getFwByHeadset,N/A,V2.0.6,V2.0.6,1,getFwByHeadset
+0,+-OpenHSUSB,N/A,N/A,N/A,1,OpenHSUSB
+3,GetPCBASNByHeadSet,N/A,N/A,N/A,3,GetPCBASNByHeadSet
+4,SetSNByHeadSet,N/A,N/A,N/A,3,SetSNByHeadSet
+5,GetSNByHeadSet,N/A,N/A,N/A,3,GetSNByHeadSet
+6,ScanBinCode,N/A,N/A,N/A,6,dllname=MES&GetBD=BarCodeWindow&条码长度=10
+7,compareBarCode,N/A,N/A,N/A,1,compareBarCode
+8,WriteLEDBinCode,N/A,N/A,N/A,3,WriteLEDBinCode
+9,ReadLEDBinCode,N/A,N/A,N/A,3,ReadLEDBinCode
+10,GetBDAFromMes,N/A,N/A,N/A,6,dllname=MES&method=GetBDFromMES
+11,SetBDAForHeadSet,N/A,N/A,N/A,3,SetBitAddressByHeadSet
+0,+-CloseHSUSB,N/A,N/A,N/A,1,CloseHSUSB

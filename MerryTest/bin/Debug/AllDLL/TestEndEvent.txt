@@ -1,0 +1,6 @@
+//测试结束后事件
+//使用说明行头“//”表示注释此行  ！！指定命名空间：MerryDllFramework  ，指定类：MerryDll
+//文件名称&方法名称 （无参可不输入，多参数用&分割）
+Config_ini&SaveTestData&http://10.175.5.59:8088/upload/Test_data_upload
+NetworkCheck&Performency
+MES&UpdataMes

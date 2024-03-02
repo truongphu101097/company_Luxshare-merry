@@ -1,0 +1,41 @@
+﻿1,UID,N/A,N/A,N/A,6,dllname=MES&method=UID_Master&IsSMT=false&PN_Name=PCB ASS’Y HDT627N007_L-M V2.0.6 MEVN
+2,ScanDongleSN,N/A,N/A,N/A,6,dllname=MES&GetBD=BarCodeWindow&条码长度=12
+0,-Check Binding,N/A,N/A,N/A,4,dllname=MES&method=CheckBinding
+0,-2S,N/A,N/A,N/A,6,dllname=Common&method=Sleep&时间=2000
+0,-UID_DONGLE,N/A,N/A,N/A,6,dllname=MES&method=UID_Slave&IsSMT=false&PN_Name=FOR PCBA ASS’Y HDT627_TX V2.0.6 20221206
+3,PlayTest,N/A,N/A,N/A,6,dllname=Audio&指令选择=PlayTest&装置名称=G733&选择音频=0&显示内容信息=播放音乐测试/Kiểm tra phát nhạc
+4,AudioTest,N/A,N/A,N/A,6,dllname=Audio&method=Sidetone&显示内容信息=Nói vào mic 123; đồng thời nghe được 123 bình thường; sau đó nhấn nút mute, nói lại vào mic 123 thì không nghe thấy gì; nếu đúng thì chọn Yes, sai thì chọn No
+5,GetVoltageByDongle,V,3.75,3.95,2,GetVoltageByDongle
+6,ConnectTypec,N/A,N/A,N/A,4,dllname=Common&method=Forms&显示信息=Vui lòng cắm cáp sạc tai nghe、请插入耳机充电线
+7,getFwByHeadset,N/A,V2.0.6,V2.0.6,1,getFwByHeadset
+8,getFwByDongle,N/A,V2.0.6,V2.0.6,1,getFwByDongle
+0,-1S,N/A,N/A,N/A,6,dllname=Common&method=Sleep&时间=1000
+0,-OpenHSUSB|2,N/A,N/A,N/A,3,OpenHSUSB
+9,GetColorIdByHeadSet,N/A,N/A,N/A,3,GetColorIdByHeadSet
+0,-GetLockStatusByHeadset,N/A,N/A,N/A,3,GetLockStatusByHeadset
+10,FactoryResetByHeadset|2,N/A,N/A,N/A,3,FactoryResetByHeadset
+0,-2S,N/A,N/A,N/A,6,dllname=Common&method=Sleep&时间=2000
+0,+-CloseHSUSB|2,N/A,N/A,N/A,3,CloseHSUSB
+11,PressPowerButton,N/A,N/A,N/A,4,dllname=Common&method=Forms&显示信息=Vui lòng cắm lại cáp, và nhấn nút nguồn để bật nguồn、请重新插线，并按开机键开机
+0,-1S,N/A,N/A,N/A,6,dllname=Common&method=Sleep&时间=1000
+0,-2S,N/A,N/A,N/A,6,dllname=Common&method=Sleep&时间=2000
+12,OpenDongleUSB|2,N/A,N/A,N/A,3,OpenDongleUSB
+13,GetColorIdByDongle,N/A,N/A,N/A,3,GetColorIdByDongle
+14,CheckPCBASNByDongle,N/A,N/A,N/A,3,CheckPCBASNByDongle
+15,GetSNByDongle,N/A,N/A,N/A,3,GetSNByDongle
+0,-GetLockStatusByDongle,N/A,N/A,N/A,3,GetLockStatusByDongle
+16,FactoryResetByDongle,N/A,N/A,N/A,3,FactoryResetByDongle
+0,-2S,N/A,N/A,N/A,6,dllname=Common&method=Sleep&时间=2000
+17,+CloseDongleUSB|2,N/A,N/A,N/A,3,CloseDongleUSB
+18,ReconnectDongle,N/A,N/A,N/A,4,dllname=Common&method=Forms&显示信息=Vui lòng rút Dongle ra và cắm lại, và xác nhận Đèn của Dongle sáng bình thường 、请重新插拔dongle，并确认dongle灯亮
+0,-1S,N/A,N/A,N/A,6,dllname=Common&method=Sleep&时间=1000
+0,-2S,N/A,N/A,N/A,6,dllname=Common&method=Sleep&时间=2000
+0,-OpenHSUSB|2,N/A,N/A,N/A,3,OpenHSUSB
+19,OpenDongleUSB|2,N/A,N/A,N/A,3,OpenDongleUSB
+20,DisableAllLogByHeadset,N/A,N/A,N/A,3,DisableAllLogByHeadset
+21,DisableAllLogByDongle,N/A,N/A,N/A,3,DisableAllLogByDongle
+22,LockByHeadset,N/A,N/A,N/A,3,LockByHeadset
+23,HeadsetPowerOffAfterLock,N/A,N/A,N/A,3,HeadsetPowerOffAfterLock
+24,LockByDongle,N/A,N/A,N/A,3,LockByDongle
+25,+CloseDongleUSB|2,N/A,N/A,N/A,3,CloseDongleUSB
+0,+-CloseHSUSB|2,N/A,N/A,N/A,3,CloseHSUSB

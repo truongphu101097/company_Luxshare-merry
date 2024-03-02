@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CommandBook>
+
+  <RACE_DSP_REALTIME_MIC_SWAP timeout="5000">
+    <RequestFormat>
+      <packet_type type="uint8" value="0x05" />
+      <race_type type="uint8" value="0x5A" />
+      <packet_len type="uint16" value="__LEN_TO_END__" />
+      <race_id type="uint16" value="0x0E0C" />
+      <mictype type="uint8" />
+    </RequestFormat>
+    <ResponseFormat>
+      <packet_type type="uint8" value="0x05" />
+      <race_type type="uint8" value="0x5B" />
+      <packet_len type="uint16" />
+      <race_id type="uint16" value="0x0E0C" />
+      <status type="uint8" />
+    </ResponseFormat>
+  </RACE_DSP_REALTIME_MIC_SWAP>
+  
+  <RACE_DSP_REALTIME_AECNR_ON_OFF timeout="5000">
+    <RequestFormat>
+      <packet_type type="uint8" value="0x05" />
+      <race_type type="uint8" value="0x5A" />
+      <packet_len type="uint16" value="__LEN_TO_END__" />
+      <race_id type="uint16" value="0x0E0D" />
+      <onoff type="uint8" />
+    </RequestFormat>
+    <ResponseFormat>
+      <packet_type type="uint8" value="0x05" />
+      <race_type type="uint8" value="0x5B" />
+      <packet_len type="uint16" />
+      <race_id type="uint16" value="0x0E0D" />
+      <status type="uint8" />
+    </ResponseFormat>
+  </RACE_DSP_REALTIME_AECNR_ON_OFF>
+  
+  <RACE_DSP_REALTIME_PASS_THROUGH_ON_OFF timeout="5000">
+    <RequestFormat>
+      <packet_type type="uint8" value="0x05" />
+      <race_type type="uint8" value="0x5A" />
+      <packet_len type="uint16" value="__LEN_TO_END__" />
+      <race_id type="uint16" value="0x0E0E" />
+      <onoff type="uint8" />
+    </RequestFormat>
+    <ResponseFormat>
+      <packet_type type="uint8" value="0x05" />
+      <race_type type="uint8" value="0x5B" />
+      <packet_len type="uint16" />
+      <race_id type="uint16" value="0x0E0E" />
+      <status type="uint8" />
+    </ResponseFormat>
+  </RACE_DSP_REALTIME_PASS_THROUGH_ON_OFF>
+  
+  <RACE_DSP_REALTIME_PASS_THROUGH_TEST_TONE_RSP timeout="3000">
+    <RequestFormat>
+    </RequestFormat>
+    <ResponseFormat>
+      <packet_type type="uint8" value="0x05" />
+      <race_type type="uint8" value="0x5D" />
+      <packet_len type="uint16" />
+      <race_id type="uint16" />
+      <dontcare1 type="uint16" />
+      <dontcare2 type="uint16" />
+      <db type="uint32" />
+      <freq type="uint32" />
+    </ResponseFormat>
+  </RACE_DSP_REALTIME_PASS_THROUGH_TEST_TONE_RSP>
+  
+  <RACE_DSP_REALTIME_PASS_THROUGH_TEST timeout="5000">
+    <RequestFormat>
+      <packet_type type="uint8" value="0x05" />
+      <race_type type="uint8" value="0x5A" />
+      <packet_len type="uint16" value="__LEN_TO_END__" />
+      <race_id type="uint16" value="0x0E0F" />
+      <mictype type="uint8" />
+    </RequestFormat>
+    <ResponseFormat>
+      <packet_type type="uint8" value="0x05" />
+      <race_type type="uint8" value="0x5B" />
+      <packet_len type="uint16" />
+      <race_id type="uint16" value="0x0E0F" />
+      <status type="uint8" />
+    </ResponseFormat>
+  </RACE_DSP_REALTIME_PASS_THROUGH_TEST>
+  
+</CommandBook>

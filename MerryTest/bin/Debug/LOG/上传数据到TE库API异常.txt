@@ -1,0 +1,42 @@
+2024-01-19 1:20:41 PM
+{"modelValue":"HDT647","SN":"","Result":"False","Station":"T2.3","workorders":"","MachineName":"DESKTOP-J36TUN2","TestTime":"2.61","TestLog":"PERCENT,F,False,0,1000#"}
+异常信息System.Net.WebException: The operation has timed out
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Config_ini.Class.HttpPostAPI.HttpPost(String url, String Writedata, String Method, String& error) False
+错误内容System.Net.WebException: The operation has timed out
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Config_ini.Class.HttpPostAPI.HttpPost(String url, String Writedata, String Method, String& error)
+2024-01-19 1:23:24 PM
+{"modelValue":"HDT647","SN":"","Result":"True","Station":"T2.3","workorders":"","MachineName":"DESKTOP-J36TUN2","TestTime":"2.09","TestLog":"PERCENT,P,2,0,1000#"}
+异常信息System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A socket operation was attempted to an unreachable host 10.175.5.59:8088
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Config_ini.Class.HttpPostAPI.HttpPost(String url, String Writedata, String Method, String& error) False
+错误内容System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A socket operation was attempted to an unreachable host 10.175.5.59:8088
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Config_ini.Class.HttpPostAPI.HttpPost(String url, String Writedata, String Method, String& error)
+2024-01-20 11:07:28 AM
+{"modelValue":"HDT647","SN":"TE_BZP_RF_JZ","Result":"True","Station":"T2.3","workorders":"000000000000","MachineName":"DESKTOP-J36TUN2","TestTime":"3.66","TestLog":"PERCENT,P,9.99,0,1#"}
+异常信息System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A socket operation was attempted to an unreachable host 10.175.5.59:8088
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Config_ini.Class.HttpPostAPI.HttpPost(String url, String Writedata, String Method, String& error) False
+错误内容System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A socket operation was attempted to an unreachable host 10.175.5.59:8088
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Config_ini.Class.HttpPostAPI.HttpPost(String url, String Writedata, String Method, String& error)

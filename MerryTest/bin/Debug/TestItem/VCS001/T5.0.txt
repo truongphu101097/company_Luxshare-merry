@@ -1,0 +1,10 @@
+﻿0,-PowerOn,N/A,N/A,N/A,4,dllname=Common_V1&method=MessageBox&Message=Vui lòng xác nhận sản phẩm đã bật nguồn\ 请确认产品已经开机
+1,CheckVideoDevices,N/A,N/A,N/A,1,CheckVideoDevices
+2,Check_Test_Flag|67,N/A,6,7,2,Read_Test_Flag
+3,Check_AST1220_FW_Version,N/A,P1.31.00,P1.31.00,1,Read_AST1220_FW
+4,Check_KL520_FW_Version,N/A,v7.7.22.NV12_192,v7.7.22.NV12_192,1,Read_KL520_FW
+5,Get PCBA SN,N/A,N/A,N/A,6,dllname=MES&method=UID_Master&IsSMT=false&PN_Name=输入料件规则
+6,Check_SN,N/A,N/A,N/A,3,Check_SN
+7,Read_MT9050_FW,N/A,P1.31.00,P1.31.00,1,Read_MT9050_FW
+8,Factory_Reset,N/A,Conferencing Mode,Conferencing Mode,1,Check_TOTEM_Mode
+9,Write_Test_Flag7,N/A,N/A,N/A,1,Write_Test_Flag-7
